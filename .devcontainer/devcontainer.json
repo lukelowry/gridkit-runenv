@@ -1,0 +1,19 @@
+{
+  "name": "GridKit Runtime",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "GRIDKIT_INSTALL_IMAGE": "${localEnv:GRIDKIT_INSTALL_IMAGE:us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit-install:latest}"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "gridkit.installPrefix": "/opt/gridkit"
+      }
+    }
+  },
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true
+}
