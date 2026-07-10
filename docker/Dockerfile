@@ -95,7 +95,7 @@ ARG GRIDKIT_PREFIX
 COPY --from=suitesparse ${SUITESPARSE_PREFIX} ${SUITESPARSE_PREFIX}
 COPY --from=sundials    ${SUNDIALS_PREFIX}    ${SUNDIALS_PREFIX}
 COPY --from=enzyme      ${ENZYME_PREFIX}      ${ENZYME_PREFIX}
-ARG GRIDKIT_REF=c099ac0037b27c03d4ec9964cd3a006429a636eb
+ARG GRIDKIT_REF=develop
 RUN git clone https://github.com/ORNL/GridKit.git /src/gridkit \
     && cd /src/gridkit && git checkout ${GRIDKIT_REF} \
     && git submodule update --init third-party/

@@ -38,5 +38,5 @@ jobs:
           gcloud builds submit \
             --project="$GCP_PROJECT" \
             --config=docker/cloudbuild.yaml \
-            --substitutions=_TAG=${{ github.sha }},_SOURCE_REVISION=${{ github.sha }} \
+            --substitutions=_SOURCE_REVISION=${{ github.sha }} \
             .
