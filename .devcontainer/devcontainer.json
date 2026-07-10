@@ -16,7 +16,6 @@
     }
   },
   "postCreateCommand": "test -x /opt/gridkit/bin/DynamicSimulation",
-  "postAttachCommand": "bash \"${containerWorkspaceFolder}/.devcontainer/install-studio.sh\" \"${containerWorkspaceFolder}\"",
   "remoteUser": "vscode",
   "updateRemoteUserUID": true
 }

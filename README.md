@@ -1,8 +1,8 @@
 # GridKit Studio run environment
 
-This repository provides a development environment for exercising GridKit cases
-through the GridKit Studio VS Code extension. GridKit and its native dependencies
-come from the latest install-artifact image; nothing is loaded from the host machine.
+This repository provides a development environment for exercising GridKit cases.
+GridKit and its native dependencies come from the latest install-artifact image;
+nothing is loaded from the host machine.
 
 ## Open the environment
 
@@ -13,8 +13,7 @@ Requirements:
 
 Clone the repository, open its folder in VS Code, and run **Dev Containers: Reopen
 in Container**. The dev container copies the GridKit installation from the image's
-`latest` tag. When VS Code attaches, the setup script installs the single checked-in
-`studio-*.vsix` package.
+`latest` tag.
 
 The GridKit artifact is currently AMD64-only. Apple Silicon and other ARM hosts run
 the container through Docker's AMD64 emulation.
@@ -25,11 +24,9 @@ From the container terminal:
 
 ```sh
 test -x /opt/gridkit/bin/DynamicSimulation
-code --list-extensions | grep '^gridkit.studio$'
 ```
 
-Open a compatible solver file and run its study from GridKit Studio. Generated
-`*.run/` directories are local test output and are ignored by Git.
+Generated `*.run/` directories are local test output and are ignored by Git.
 
 ## GridKit install image
 
