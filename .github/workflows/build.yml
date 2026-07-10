@@ -1,0 +1,42 @@
+name: Build GridKit install image
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docker/**"
+      - ".github/workflows/build.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: build-gridkit-install
+  cancel-in-progress: false
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GCP_PROJECT: gridkitvm
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WIF_PROVIDER }}
+          service_account: ${{ vars.GCP_DEPLOYER_SA }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Submit Cloud Build
+        run: |
+          gcloud builds submit \
+            --project="$GCP_PROJECT" \
+            --config=docker/cloudbuild.yaml \
+            --substitutions=_TAG=${{ github.sha }},_SOURCE_REVISION=${{ github.sha }} \
+            .

@@ -1,0 +1,31 @@
+# Manual invocation:
+# gcloud builds submit --project=gridkitvm --config=docker/cloudbuild.yaml .
+
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --file=docker/Dockerfile
+      - --build-arg=SOURCE_REVISION=${_SOURCE_REVISION}
+      - --tag=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:latest
+      - --tag=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:${_TAG}
+      - --cache-from=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:latest
+      - .
+    env: [DOCKER_BUILDKIT=1]
+
+images:
+  - ${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:latest
+  - ${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:${_TAG}
+
+options:
+  machineType: E2_HIGHCPU_32
+  diskSizeGb: 100
+  logging: CLOUD_LOGGING_ONLY
+
+timeout: 3600s
+
+substitutions:
+  _AR_HOST: us-central1-docker.pkg.dev
+  _AR_REPO: lattice
+  _SOURCE_REVISION: manual
+  _TAG: manual

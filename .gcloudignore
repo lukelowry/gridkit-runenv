@@ -1,0 +1,15 @@
+# The GridKit artifact build uses only `docker/`. Keep large cases and
+# the checked-in VSIX out of the source archive uploaded by gcloud.
+.git/
+.devcontainer/
+.github/
+.vscode/
+cases/
+wecc.example/
+*.case.json
+*.solver.json
+*.vsix
+.dockerignore
+.gitattributes
+.gitignore
+README.md

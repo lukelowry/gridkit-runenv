@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-# gridkit-install is currently published only for linux/amd64.
+# The local build workflow publishes gridkit-install for linux/amd64.
 ARG GRIDKIT_INSTALL_IMAGE=us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit-install@sha256:c045de799e851f176417e311a77028fb7dd86b49bf7e3938ae1ff23502b17621
 ARG RUNTIME_PLATFORM=linux/amd64
 
