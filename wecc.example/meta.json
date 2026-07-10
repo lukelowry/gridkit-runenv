@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "runId": "47ac1318-338e-4bc1-ac27-901657639f25",
+  "protocolVersion": 2,
+  "vendor": "gridkit",
+  "app": "DynamicSimulation",
+  "extension": {
+    "id": "gridkit.studio",
+    "version": "0.1.1",
+    "commit": "f759b42b17a938492ec35b72509fcb6665d572b5-dirty"
+  },
+  "runtime": {
+    "executableSha256": "f4d1b9b6312f8a46c64028650c7727eabd8f421ddcfec288fabf9cb82b524a71",
+    "gridkitCommit": "c099ac0037b27c03d4ec9964cd3a006429a636eb",
+    "imageBuiltAt": "2026-07-09T22:08:01Z"
+  },
+  "solver": "/workspaces/gridkit-runenv/wecc.solver.json",
+  "case": "/workspaces/gridkit-runenv/WECC.case.json",
+  "inputs": {
+    "study": {
+      "sha256": "e66176af2f233f899abcdab916b2243dbb5cb6a90cdb55f0f40bc87b204e74ef",
+      "version": 1,
+      "dirty": false
+    },
+    "case": {
+      "sha256": "2782f90109f862562b078b40cdcbcf8b80a06a9d630d65be0a09d955e7d63b8f",
+      "version": null,
+      "dirty": false
+    }
+  },
+  "dt": 0.00416666666666,
+  "tmax": 4,
+  "state": "error",
+  "startedAt": "2026-07-10T01:45:41.436Z",
+  "finishedAt": "2026-07-10T01:45:42.011Z",
+  "frames": 0,
+  "exitMessage": "ENODATA: no data available, read",
+  "axes": [
+    {
+      "classId": "bus",
+      "scope": "vertex",
+      "elementCount": 243,
+      "binCount": 961,
+      "monitors": [
+        {
+          "id": "Vr",
+          "label": "Vr",
+          "unit": "",
+          "min": null,
+          "max": null
+        },
+        {
+          "id": "Vi",
+          "label": "Vi",
+          "unit": "",
+          "min": null,
+          "max": null
+        }
+      ]
+    },
+    {
+      "classId": "genrou",
+      "scope": "device",
+      "elementCount": 140,
+      "binCount": 961,
+      "monitors": [
+        {
+          "id": "delta",
+          "label": "delta",
+          "unit": "",
+          "min": null,
+          "max": null
+        },
+        {
+          "id": "omega",
+          "label": "omega",
+          "unit": "",
+          "min": null,
+          "max": null
+        }
+      ]
+    }
+  ]
+}

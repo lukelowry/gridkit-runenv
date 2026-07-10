@@ -17,10 +17,7 @@
                 "Vi": 0.10020641764142252
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.740793,
                 "latitude": 37.791040
@@ -35,10 +32,7 @@
                 "Vi": 0.14728012258348752
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -112.086864,
                 "latitude": 37.321766
@@ -53,10 +47,7 @@
                 "Vi": -0.005247780093865476
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -111.331526,
                 "latitude": 36.652361
@@ -71,10 +62,7 @@
                 "Vi": 0.3318111521015227
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -109.788292,
                 "latitude": 37.948556
@@ -89,10 +77,7 @@
                 "Vi": 0.15744487970179266
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -112.054306,
                 "latitude": 36.598981
@@ -107,10 +92,7 @@
                 "Vi": 0.36039371568205053
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -109.788292,
                 "latitude": 37.093980
@@ -125,10 +107,7 @@
                 "Vi": -0.2375854302434612
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -114.346366,
                 "latitude": 35.998612
@@ -143,10 +122,7 @@
                 "Vi": -0.0833117864508966
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.350101,
                 "latitude": 36.668367
@@ -161,10 +137,7 @@
                 "Vi": -0.22495725987948456
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.350101,
                 "latitude": 35.247111
@@ -179,10 +152,7 @@
                 "Vi": -0.12613293316564375
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -114.613339,
                 "latitude": 37.168218
@@ -197,10 +167,7 @@
                 "Vi": -0.07319573175533516
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -114.782639,
                 "latitude": 37.943311
@@ -215,10 +182,7 @@
                 "Vi": -0.057545627897254474
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.156573,
                 "latitude": 37.675315
@@ -233,10 +197,7 @@
                 "Vi": -0.17940661970367097
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.908175,
                 "latitude": 37.938065
@@ -251,10 +212,7 @@
                 "Vi": -0.20784994512086788
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.924934,
                 "latitude": 38.361733
@@ -269,10 +227,7 @@
                 "Vi": -0.26432751606615407
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.091457,
                 "latitude": 38.523226
@@ -287,10 +242,7 @@
                 "Vi": -0.1599684670484953
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.077475,
                 "latitude": 38.507614
@@ -305,10 +257,7 @@
                 "Vi": -0.24030861029597975
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.924934,
                 "latitude": 39.010702
@@ -323,10 +272,7 @@
                 "Vi": -0.2643888048514344
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.323120,
                 "latitude": 34.976431
@@ -341,10 +287,7 @@
                 "Vi": -0.3686898126599126
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.961227,
                 "latitude": 36.561594
@@ -359,10 +302,7 @@
                 "Vi": -0.2578765325667368
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.829421,
                 "latitude": 35.113847
@@ -377,10 +317,7 @@
                 "Vi": -0.22417837507215993
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.238446,
                 "latitude": 34.729446
@@ -395,10 +332,7 @@
                 "Vi": -0.28891122902783034
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.241794,
                 "latitude": 34.297952
@@ -413,10 +347,7 @@
                 "Vi": -0.27751383551411757
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.177975,
                 "latitude": 34.150117
@@ -431,10 +362,7 @@
                 "Vi": -0.2234971954901016
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.144263,
                 "latitude": 35.212286
@@ -449,10 +377,7 @@
                 "Vi": -0.21733991013191167
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.867712,
                 "latitude": 35.444485
@@ -467,10 +392,7 @@
                 "Vi": -0.44391310666799144
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.331141,
                 "latitude": 34.718903
@@ -485,10 +407,7 @@
                 "Vi": -0.460835784881212
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.684275,
                 "latitude": 34.496665
@@ -503,10 +422,7 @@
                 "Vi": -0.4709804148820405
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.041664,
                 "latitude": 34.934562
@@ -521,10 +437,7 @@
                 "Vi": -0.4674816091171509
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.914025,
                 "latitude": 35.098921
@@ -539,10 +452,7 @@
                 "Vi": -0.2679668179823379
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.880151,
                 "latitude": 34.850762
@@ -557,10 +467,7 @@
                 "Vi": -0.2487086243513346
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.812077,
                 "latitude": 34.538755
@@ -575,10 +482,7 @@
                 "Vi": -0.24463617366197632
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.756767,
                 "latitude": 34.376289
@@ -593,10 +497,7 @@
                 "Vi": -0.34879016524074263
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.433415,
                 "latitude": 35.218248
@@ -611,10 +512,7 @@
                 "Vi": -0.24891084902117966
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.960826,
                 "latitude": 36.298976
@@ -629,10 +527,7 @@
                 "Vi": -0.319181648868184
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.296779,
                 "latitude": 35.761927
@@ -647,10 +542,7 @@
                 "Vi": -0.39156195437962976
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.182229,
                 "latitude": 35.176503
@@ -665,10 +557,7 @@
                 "Vi": -0.17947029584863772
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.411817,
                 "latitude": 36.525085
@@ -683,10 +572,7 @@
                 "Vi": -0.19406495497254006
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.305451,
                 "latitude": 35.767849
@@ -701,10 +587,7 @@
                 "Vi": -0.2605285658947383
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.607530,
                 "latitude": 35.631543
@@ -719,10 +602,7 @@
                 "Vi": -0.3479757045461632
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.960664,
                 "latitude": 35.340375
@@ -737,10 +617,7 @@
                 "Vi": -0.16121677346520302
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.011719,
                 "latitude": 35.489062
@@ -755,10 +632,7 @@
                 "Vi": -0.328614894661657
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.322307,
                 "latitude": 35.295716
@@ -773,10 +647,7 @@
                 "Vi": -0.25575397696721947
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.428835,
                 "latitude": 35.912788
@@ -791,10 +662,7 @@
                 "Vi": -0.2022337493603999
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.582002,
                 "latitude": 36.293094
@@ -809,10 +677,7 @@
                 "Vi": -0.2484380593240698
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.731076,
                 "latitude": 36.870310
@@ -827,10 +692,7 @@
                 "Vi": -0.20168757599544834
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.731750,
                 "latitude": 36.348723
@@ -845,10 +707,7 @@
                 "Vi": -0.13652416770528863
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.798825,
                 "latitude": 35.486091
@@ -863,10 +722,7 @@
                 "Vi": -0.32760989818209724
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.420163,
                 "latitude": 35.018277
@@ -881,10 +737,7 @@
                 "Vi": -0.35607942825686156
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.377780,
                 "latitude": 35.322514
@@ -899,10 +752,7 @@
                 "Vi": -0.37704415421279414
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.586256,
                 "latitude": 35.018277
@@ -917,10 +767,7 @@
                 "Vi": -0.40375107923760506
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.509673,
                 "latitude": 34.757883
@@ -935,10 +782,7 @@
                 "Vi": -0.39534548980249884
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.773460,
                 "latitude": 34.607858
@@ -953,10 +797,7 @@
                 "Vi": -0.1722024350539435
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.914350,
                 "latitude": 36.522153
@@ -971,10 +812,7 @@
                 "Vi": -0.17900551303800985
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.654656,
                 "latitude": 36.390086
@@ -989,10 +827,7 @@
                 "Vi": -0.16792509672345812
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.880313,
                 "latitude": 36.248967
@@ -1007,10 +842,7 @@
                 "Vi": -0.18431590691392233
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.484471,
                 "latitude": 36.727142
@@ -1025,10 +857,7 @@
                 "Vi": -0.06110710504601512
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -114.886823,
                 "latitude": 40.483424
@@ -1043,10 +872,7 @@
                 "Vi": -0.12902090296334504
             },
             "params": {"kv": 287.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.288595,
                 "latitude": 35.782651
@@ -1061,10 +887,7 @@
                 "Vi": -0.12902090296334504
             },
             "params": {"kv": 287.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.497072,
                 "latitude": 35.729351
@@ -1079,10 +902,7 @@
                 "Vi": -0.16592432903072646
             },
             "params": {"kv": 287.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.756767,
                 "latitude": 36.530949
@@ -1097,10 +917,7 @@
                 "Vi": -0.16671957021404787
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.514090,
                 "latitude": 36.213648
@@ -1115,10 +932,7 @@
                 "Vi": -0.13459480352974218
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.250466,
                 "latitude": 35.889143
@@ -1133,10 +947,7 @@
                 "Vi": 0.11263938896749248
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.633545,
                 "latitude": 35.408805
@@ -1151,10 +962,7 @@
                 "Vi": -0.17009484803086633
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.207757,
                 "latitude": 36.381274
@@ -1169,10 +977,7 @@
                 "Vi": -0.1762339233296831
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.548290,
                 "latitude": 36.231310
@@ -1187,10 +992,7 @@
                 "Vi": -0.07355503623579994
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.986517,
                 "latitude": 35.414753
@@ -1205,10 +1007,7 @@
                 "Vi": -0.1015835771127232
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.007790,
                 "latitude": 35.732313
@@ -1223,10 +1022,7 @@
                 "Vi": -0.16012913457766137
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.314285,
                 "latitude": 36.010251
@@ -1241,10 +1037,7 @@
                 "Vi": -0.07949076792251566
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.373850,
                 "latitude": 35.536584
@@ -1259,10 +1052,7 @@
                 "Vi": -0.10954882161440459
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.633383,
                 "latitude": 35.829998
@@ -1277,10 +1067,7 @@
                 "Vi": -0.19311527163381337
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.867387,
                 "latitude": 35.927563
@@ -1295,10 +1082,7 @@
                 "Vi": -0.1707553982781027
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.663002,
                 "latitude": 35.880274
@@ -1313,10 +1097,7 @@
                 "Vi": -0.17648945033977317
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.365504,
                 "latitude": 35.821123
@@ -1331,10 +1112,7 @@
                 "Vi": -0.12206521779524324
             },
             "params": {"kv": 138.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.428998,
                 "latitude": 35.521736
@@ -1349,10 +1127,7 @@
                 "Vi": 0.12402098807054437
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.408050,
                 "latitude": 35.471234
@@ -1367,10 +1142,7 @@
                 "Vi": -0.1689944711572009
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.126919,
                 "latitude": 36.478155
@@ -1385,10 +1157,7 @@
                 "Vi": -0.05365038728652145
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.208130,
                 "latitude": 40.871886
@@ -1403,10 +1172,7 @@
                 "Vi": -0.1758654240009758
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.382360,
                 "latitude": 36.328378
@@ -1421,10 +1187,7 @@
                 "Vi": -0.16575387526751129
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.543873,
                 "latitude": 36.098749
@@ -1439,10 +1202,7 @@
                 "Vi": -0.19263499084820923
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.007952,
                 "latitude": 37.454784
@@ -1457,10 +1217,7 @@
                 "Vi": -0.2173381290288069
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.199248,
                 "latitude": 37.106388
@@ -1475,10 +1232,7 @@
                 "Vi": -0.1328888228812139
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.385639,
                 "latitude": 40.046666
@@ -1493,10 +1247,7 @@
                 "Vi": -0.11401038107692035
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.453713,
                 "latitude": 39.867662
@@ -1511,10 +1262,7 @@
                 "Vi": -0.07800542206113772
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.994213,
                 "latitude": 39.542025
@@ -1529,10 +1277,7 @@
                 "Vi": -0.19655759941358988
             },
             "params": {"kv": 115.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.751537,
                 "latitude": 40.149938
@@ -1547,10 +1292,7 @@
                 "Vi": -0.19956978386185517
             },
             "params": {"kv": 115.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.730263,
                 "latitude": 40.367134
@@ -1565,10 +1307,7 @@
                 "Vi": -0.07784481020963455
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.870829,
                 "latitude": 39.347599
@@ -1583,10 +1322,7 @@
                 "Vi": -0.19857709336251483
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.828120,
                 "latitude": 40.580861
@@ -1601,10 +1337,7 @@
                 "Vi": -0.0801494882377654
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.968848,
                 "latitude": 40.001959
@@ -1619,10 +1352,7 @@
                 "Vi": -0.07228906229650031
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.258162,
                 "latitude": 39.623578
@@ -1637,10 +1367,7 @@
                 "Vi": -0.0737667581366264
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.062450,
                 "latitude": 39.192233
@@ -1655,10 +1382,7 @@
                 "Vi": 0.0024776677406754552
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.930394,
                 "latitude": 39.954425
@@ -1673,10 +1397,7 @@
                 "Vi": -0.044111081191360556
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.828282,
                 "latitude": 40.278112
@@ -1691,10 +1412,7 @@
                 "Vi": 0.022254042701783532
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.245236,
                 "latitude": 40.381033
@@ -1709,10 +1427,7 @@
                 "Vi": -0.08359531118057453
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.360436,
                 "latitude": 38.761069
@@ -1727,10 +1442,7 @@
                 "Vi": -0.131493566224819
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.249491,
                 "latitude": 39.262896
@@ -1745,10 +1457,7 @@
                 "Vi": -0.0956245751212306
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.258162,
                 "latitude": 38.427400
@@ -1763,10 +1472,7 @@
                 "Vi": -0.12155635126435178
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.785736,
                 "latitude": 39.050692
@@ -1781,10 +1487,7 @@
                 "Vi": -0.08305165387418545
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.411329,
                 "latitude": 39.325022
@@ -1799,10 +1502,7 @@
                 "Vi": -0.09166488322092943
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.632570,
                 "latitude": 38.284334
@@ -1817,10 +1517,7 @@
                 "Vi": -0.23161060798845784
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.501164,
                 "latitude": 38.704141
@@ -1835,10 +1532,7 @@
                 "Vi": -0.2323457496404183
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.407562,
                 "latitude": 38.880469
@@ -1853,10 +1547,7 @@
                 "Vi": -0.027134601649120616
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.092557,
                 "latitude": 38.678509
@@ -1871,10 +1562,7 @@
                 "Vi": -0.14908506544167463
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.403145,
                 "latitude": 38.521669
@@ -1889,10 +1577,7 @@
                 "Vi": -0.25850951068437084
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.700969,
                 "latitude": 39.237466
@@ -1907,10 +1592,7 @@
                 "Vi": -0.2323457496404183
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.433090,
                 "latitude": 38.991161
@@ -1925,10 +1607,7 @@
                 "Vi": -0.02101288084790781
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.203177,
                 "latitude": 38.803734
@@ -1943,10 +1622,7 @@
                 "Vi": 0.02808310420231592
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.479240,
                 "latitude": 40.658411
@@ -1961,10 +1637,7 @@
                 "Vi": 0.03353556760763554
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.551569,
                 "latitude": 40.942910
@@ -1979,10 +1652,7 @@
                 "Vi": -0.07017136680578243
             },
             "params": {"kv": 115.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.828282,
                 "latitude": 41.475448
@@ -1997,10 +1667,7 @@
                 "Vi": -0.06967857675799563
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.198435,
                 "latitude": 41.701961
@@ -2015,10 +1682,7 @@
                 "Vi": -0.35611016851587274
             },
             "params": {"kv": 115.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.096812,
                 "latitude": 39.974002
@@ -2033,10 +1697,7 @@
                 "Vi": -0.35486550684341045
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.024483,
                 "latitude": 39.772376
@@ -2051,10 +1712,7 @@
                 "Vi": 0.003982666682053274
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.556149,
                 "latitude": 38.034726
@@ -2069,10 +1727,7 @@
                 "Vi": -0.1041361921457762
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.956409,
                 "latitude": 38.244225
@@ -2087,10 +1742,7 @@
                 "Vi": -0.1298921594340763
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.535038,
                 "latitude": 37.775612
@@ -2105,10 +1757,7 @@
                 "Vi": -0.12454536258174181
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.377617,
                 "latitude": 38.321558
@@ -2123,10 +1772,7 @@
                 "Vi": -0.12025927321813239
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.930881,
                 "latitude": 37.582124
@@ -2141,10 +1787,7 @@
                 "Vi": -0.06293417487409611
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.224288,
                 "latitude": 37.648602
@@ -2159,10 +1802,7 @@
                 "Vi": 0.014029199563740163
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.862482,
                 "latitude": 37.985852
@@ -2177,10 +1817,7 @@
                 "Vi": -0.1184728338673362
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.420326,
                 "latitude": 37.668823
@@ -2195,10 +1832,7 @@
                 "Vi": -0.05960613155595129
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.147705,
                 "latitude": 37.483744
@@ -2213,10 +1847,7 @@
                 "Vi": -0.1694340428274024
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.173395,
                 "latitude": 38.118023
@@ -2231,10 +1862,7 @@
                 "Vi": -0.07106793830150906
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.918117,
                 "latitude": 37.315619
@@ -2249,10 +1877,7 @@
                 "Vi": -0.23544740129669944
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.522437,
                 "latitude": 36.902413
@@ -2267,10 +1892,7 @@
                 "Vi": -0.07008809679926604
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.330816,
                 "latitude": 37.312717
@@ -2285,10 +1907,7 @@
                 "Vi": -0.23585980070693907
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.892590,
                 "latitude": 36.884904
@@ -2303,10 +1922,7 @@
                 "Vi": -0.06724334000334789
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.726497,
                 "latitude": 37.286594
@@ -2321,10 +1937,7 @@
                 "Vi": -0.23343549405422512
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.309543,
                 "latitude": 36.832353
@@ -2339,10 +1952,7 @@
                 "Vi": -0.10816838029521715
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.705223,
                 "latitude": 38.911707
@@ -2357,10 +1967,7 @@
                 "Vi": -0.03970863827308981
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.109413,
                 "latitude": 38.567330
@@ -2375,10 +1982,7 @@
                 "Vi": -0.09560845244657167
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.126432,
                 "latitude": 39.028019
@@ -2393,10 +1997,7 @@
                 "Vi": -0.09868617777085213
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.973102,
                 "latitude": 40.486572
@@ -2411,10 +2012,7 @@
                 "Vi": -0.1127378754896183
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.879501,
                 "latitude": 40.669483
@@ -2429,10 +2027,7 @@
                 "Vi": -0.10302881402046168
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.339163,
                 "latitude": 41.614724
@@ -2447,10 +2042,7 @@
                 "Vi": -0.23005947737174015
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.015811,
                 "latitude": 39.387092
@@ -2465,10 +2057,7 @@
                 "Vi": -0.27859916527137657
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.488075,
                 "latitude": 40.029904
@@ -2483,10 +2072,7 @@
                 "Vi": -0.3015190861064689
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.007302,
                 "latitude": 40.669483
@@ -2501,10 +2087,7 @@
                 "Vi": -0.2204455700769837
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.364528,
                 "latitude": 40.683319
@@ -2519,10 +2102,7 @@
                 "Vi": -0.07562925901699
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.177324,
                 "latitude": 40.989749
@@ -2537,10 +2117,7 @@
                 "Vi": -0.1817661398319328
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.917630,
                 "latitude": 41.091578
@@ -2555,10 +2132,7 @@
                 "Vi": -0.21717301838548422
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.951992,
                 "latitude": 39.990777
@@ -2573,10 +2147,7 @@
                 "Vi": -0.037089007563539465
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.168653,
                 "latitude": 40.816003
@@ -2591,10 +2162,7 @@
                 "Vi": -0.05899961340679929
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.764463,
                 "latitude": 40.489347
@@ -2609,10 +2177,7 @@
                 "Vi": -0.1769703084294044
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.692134,
                 "latitude": 41.206976
@@ -2627,10 +2192,7 @@
                 "Vi": -0.1466803561156056
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.492492,
                 "latitude": 38.687054
@@ -2645,10 +2207,7 @@
                 "Vi": -0.10453845104508597
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.296454,
                 "latitude": 38.086439
@@ -2663,10 +2222,7 @@
                 "Vi": -0.28538030026758215
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.215779,
                 "latitude": 40.937398
@@ -2681,10 +2237,7 @@
                 "Vi": -0.2780702105817904
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.675441,
                 "latitude": 40.522640
@@ -2699,10 +2252,7 @@
                 "Vi": 0.027613275915423573
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.113668,
                 "latitude": 41.272826
@@ -2717,10 +2267,7 @@
                 "Vi": -0.2241935832349961
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.585931,
                 "latitude": 40.411601
@@ -2735,10 +2282,7 @@
                 "Vi": -0.018226900338668306
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.577422,
                 "latitude": 39.530769
@@ -2753,10 +2297,7 @@
                 "Vi": -0.09613886102351206
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.339000,
                 "latitude": 40.353232
@@ -2771,10 +2312,7 @@
                 "Vi": -0.07356209196801904
             },
             "params": {"kv": 115.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.551732,
                 "latitude": 41.300244
@@ -2789,10 +2327,7 @@
                 "Vi": -0.33434795921870647
             },
             "params": {"kv": 115.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.330816,
                 "latitude": 40.161093
@@ -2807,10 +2342,7 @@
                 "Vi": 0.03438897368990264
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.837117,
                 "latitude": 41.352307
@@ -2825,10 +2357,7 @@
                 "Vi": -0.03288870522857954
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.122177,
                 "latitude": 38.427400
@@ -2843,10 +2372,7 @@
                 "Vi": 0.0
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.598695,
                 "latitude": 38.999668
@@ -2861,10 +2387,7 @@
                 "Vi": -0.11214686835322912
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.313473,
                 "latitude": 42.295809
@@ -2879,10 +2402,7 @@
                 "Vi": -0.07285394735958618
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.057941,
                 "latitude": 41.661710
@@ -2897,10 +2417,7 @@
                 "Vi": 0.07963611854976044
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.452368,
                 "latitude": 41.641831
@@ -2915,10 +2432,7 @@
                 "Vi": -0.1104004939559636
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.832813,
                 "latitude": 42.589100
@@ -2933,10 +2447,7 @@
                 "Vi": -0.10120625721677598
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.282109,
                 "latitude": 43.945107
@@ -2951,10 +2462,7 @@
                 "Vi": -0.16822523219690289
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.493254,
                 "latitude": 43.217585
@@ -2969,10 +2477,7 @@
                 "Vi": -0.17143544271929423
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.851389,
                 "latitude": 42.087627
@@ -2987,10 +2492,7 @@
                 "Vi": -0.15301545766187766
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.438386,
                 "latitude": 40.796341
@@ -3005,10 +2507,7 @@
                 "Vi": -0.21474127173653504
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.509054,
                 "latitude": 43.978620
@@ -3023,10 +2522,7 @@
                 "Vi": -0.21892292960339288
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.430915,
                 "latitude": 42.848090
@@ -3041,10 +2537,7 @@
                 "Vi": -0.10465515703912061
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.176007,
                 "latitude": 40.665296
@@ -3059,10 +2552,7 @@
                 "Vi": -0.09044600973973362
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.907216,
                 "latitude": 42.770018
@@ -3077,10 +2567,7 @@
                 "Vi": -0.2053254218910101
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.459738,
                 "latitude": 43.295089
@@ -3095,10 +2582,7 @@
                 "Vi": -0.078838917073851
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.190948,
                 "latitude": 41.651772
@@ -3113,10 +2597,7 @@
                 "Vi": -0.09537792299150294
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.630956,
                 "latitude": 42.053065
@@ -3131,10 +2612,7 @@
                 "Vi": -0.11354335499383617
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.884905,
                 "latitude": 42.122169
@@ -3149,10 +2627,7 @@
                 "Vi": -0.11391340588948373
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.295132,
                 "latitude": 41.944321
@@ -3167,10 +2642,7 @@
                 "Vi": -0.1110798749908331
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.278374,
                 "latitude": 41.726275
@@ -3185,10 +2657,7 @@
                 "Vi": -0.11359432239450439
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.151878,
                 "latitude": 42.186270
@@ -3203,10 +2672,7 @@
                 "Vi": -0.11398235764933885
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.718382,
                 "latitude": 41.978941
@@ -3221,10 +2687,7 @@
                 "Vi": -0.11101105070777156
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.643020,
                 "latitude": 41.820522
@@ -3239,10 +2702,7 @@
                 "Vi": 0.21971114420896315
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.197459,
                 "latitude": 45.644104
@@ -3257,10 +2717,7 @@
                 "Vi": 0.07576822234405885
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.297908,
                 "latitude": 44.810297
@@ -3275,10 +2732,7 @@
                 "Vi": -0.07117293788446048
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.833772,
                 "latitude": 44.417318
@@ -3293,10 +2747,7 @@
                 "Vi": -0.267652056195351
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.458879,
                 "latitude": 45.476456
@@ -3311,10 +2762,7 @@
                 "Vi": 0.25679760488770637
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.377006,
                 "latitude": 46.318885
@@ -3329,10 +2777,7 @@
                 "Vi": 0.10699632654685917
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.943509,
                 "latitude": 44.222214
@@ -3347,10 +2792,7 @@
                 "Vi": 0.07915672050606683
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.183477,
                 "latitude": 46.337256
@@ -3365,10 +2807,7 @@
                 "Vi": -0.15271339327919076
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.511830,
                 "latitude": 45.252146
@@ -3383,10 +2822,7 @@
                 "Vi": -0.20578569283643616
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.228099,
                 "latitude": 44.231747
@@ -3401,10 +2837,7 @@
                 "Vi": -0.14335116141751292
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.195541,
                 "latitude": 42.984478
@@ -3419,10 +2852,7 @@
                 "Vi": 0.09771505012288426
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.900705,
                 "latitude": 46.776320
@@ -3437,10 +2867,7 @@
                 "Vi": -0.148561520727749
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -123.130426,
                 "latitude": 46.037956
@@ -3455,10 +2882,7 @@
                 "Vi": -0.10603237627353194
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.137896,
                 "latitude": 47.207314
@@ -3473,10 +2897,7 @@
                 "Vi": -0.12871894723164587
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.497949,
                 "latitude": 47.184716
@@ -3491,10 +2912,7 @@
                 "Vi": -0.19174031939038047
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.361206,
                 "latitude": 46.465683
@@ -3509,10 +2927,7 @@
                 "Vi": -0.238165790460264
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -117.471902,
                 "latitude": 45.871489
@@ -3527,10 +2942,7 @@
                 "Vi": -0.07424104502889653
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.205788,
                 "latitude": 47.894140
@@ -3545,10 +2957,7 @@
                 "Vi": -0.08497213199190332
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.676536,
                 "latitude": 47.965446
@@ -3563,10 +2972,7 @@
                 "Vi": 0.2552251615079628
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.794703,
                 "latitude": 41.656741
@@ -3581,10 +2987,7 @@
                 "Vi": 0.2945769579078372
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.362165,
                 "latitude": 42.156693
@@ -3599,10 +3002,7 @@
                 "Vi": 0.25932007667039564
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -114.417993,
                 "latitude": 41.537365
@@ -3617,10 +3017,7 @@
                 "Vi": 0.04628592899146851
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -114.203112,
                 "latitude": 42.628262
@@ -3635,10 +3032,7 @@
                 "Vi": 0.31082677759795746
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.648673,
                 "latitude": 42.818825
@@ -3653,10 +3047,7 @@
                 "Vi": 0.1348978756186484
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -109.651550,
                 "latitude": 45.373758
@@ -3671,10 +3062,7 @@
                 "Vi": 0.05135348509315149
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.244958,
                 "latitude": 43.411162
@@ -3689,10 +3077,7 @@
                 "Vi": 0.11216535545095369
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -109.664573,
                 "latitude": 44.654371
@@ -3707,10 +3092,7 @@
                 "Vi": 0.05647771848098982
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -114.639385,
                 "latitude": 44.112482
@@ -3725,10 +3107,7 @@
                 "Vi": 0.23527961462540734
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.174290,
                 "latitude": 45.917780
@@ -3743,10 +3122,7 @@
                 "Vi": 0.13914156375380785
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -110.022707,
                 "latitude": 46.056422
@@ -3761,10 +3137,7 @@
                 "Vi": 0.24197655182901975
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.219871,
                 "latitude": 46.548084
@@ -3779,10 +3152,7 @@
                 "Vi": 0.2822311610969232
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -112.438486,
                 "latitude": 42.862718
@@ -3797,10 +3167,7 @@
                 "Vi": -0.5372815545089676
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -108.219012,
                 "latitude": 41.467628
@@ -3815,10 +3182,7 @@
                 "Vi": 0.506379622707916
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -110.797580,
                 "latitude": 43.449803
@@ -3833,10 +3197,7 @@
                 "Vi": -0.33737176488973586
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -108.316685,
                 "latitude": 42.862718
@@ -3851,10 +3212,7 @@
                 "Vi": 0.5286393988038967
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -111.722218,
                 "latitude": 41.875023
@@ -3869,10 +3227,7 @@
                 "Vi": 0.5236715386311563
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -110.426422,
                 "latitude": 42.686959
@@ -3887,10 +3242,7 @@
                 "Vi": 0.541946260351762
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -110.660838,
                 "latitude": 41.132843
@@ -3905,10 +3257,7 @@
                 "Vi": -0.3524982423765232
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -118.194683,
                 "latitude": 39.955241
@@ -3923,10 +3272,7 @@
                 "Vi": -0.37193179823461464
             },
             "params": {"kv": 115.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.002113,
                 "latitude": 39.237737
@@ -3941,10 +3287,7 @@
                 "Vi": 0.07662699800788497
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.319361,
                 "latitude": 40.624923
@@ -3959,10 +3302,7 @@
                 "Vi": -0.0779631879293946
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.052388,
                 "latitude": 39.325258
@@ -3977,10 +3317,7 @@
                 "Vi": 0.08263633101512431
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -116.781680,
                 "latitude": 40.942202
@@ -3995,10 +3332,7 @@
                 "Vi": -0.008732609882140157
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.558470,
                 "latitude": 40.786270
@@ -4013,10 +3347,7 @@
                 "Vi": -0.02215421063216609
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -112.080352,
                 "latitude": 39.119151
@@ -4031,10 +3362,7 @@
                 "Vi": 0.1879284705274353
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.610563,
                 "latitude": 38.554441
@@ -4049,10 +3377,7 @@
                 "Vi": -0.022201104626204844
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.623586,
                 "latitude": 39.837876
@@ -4067,10 +3392,7 @@
                 "Vi": 0.16420509522900456
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -113.317544,
                 "latitude": 38.220784
@@ -4085,10 +3407,7 @@
                 "Vi": 0.1582953947890378
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -112.607786,
                 "latitude": 37.770013
@@ -4103,10 +3422,7 @@
                 "Vi": 0.004224950146332957
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -115.095192,
                 "latitude": 39.052036
@@ -4121,10 +3437,7 @@
                 "Vi": 0.026470026437627758
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -114.092416,
                 "latitude": 39.273788
@@ -4139,10 +3452,7 @@
                 "Vi": -0.021836225010756476
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -112.106398,
                 "latitude": 40.584525
@@ -4157,10 +3467,7 @@
                 "Vi": 0.004625405799991316
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -112.646856,
                 "latitude": 41.322932
@@ -4175,10 +3482,7 @@
                 "Vi": 0.20362073214056664
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -111.852448,
                 "latitude": 38.074326
@@ -4193,10 +3497,7 @@
                 "Vi": -0.5674365376629956
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -107.795762,
                 "latitude": 40.412562
@@ -4211,10 +3512,7 @@
                 "Vi": -0.5174472199140048
             },
             "params": {"kv": 345.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -109.632015,
                 "latitude": 39.211974
@@ -4229,10 +3527,7 @@
                 "Vi": -0.5521275531155175
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -107.567859,
                 "latitude": 39.103668
@@ -4247,10 +3542,7 @@
                 "Vi": -0.5059729384207425
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -110.231076,
                 "latitude": 39.980729
@@ -4265,10 +3557,7 @@
                 "Vi": -0.11245880440614289
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.134778,
                 "latitude": 41.715581
@@ -4283,10 +3572,7 @@
                 "Vi": -0.14058080167535578
             },
             "params": {"kv": 500.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.228705,
                 "latitude": 39.231813
@@ -4301,10 +3587,7 @@
                 "Vi": -0.06563380931394204
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -122.181579,
                 "latitude": 41.401591
@@ -4319,10 +3602,7 @@
                 "Vi": -0.20348243928652301
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.007302,
                 "latitude": 39.806022
@@ -4337,10 +3617,7 @@
                 "Vi": -0.23297084175301455
             },
             "params": {"kv": 230.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -119.956409,
                 "latitude": 39.519511
@@ -4355,10 +3632,7 @@
                 "Vi": -0.06021866099846889
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -121.790153,
                 "latitude": 41.581980
@@ -4373,10 +3647,7 @@
                 "Vi": -0.18739977403129726
             },
             "params": {"kv": 20.0},
-            "mon": [
-                "Vr",
-                "Vi"
-            ],
+            "mon": ["Vr", "Vi", "Vm", "Va"],
             "extension": {
                 "longitude": -120.794571,
                 "latitude": 39.654487
