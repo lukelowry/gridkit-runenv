@@ -1,43 +1,49 @@
 # syntax=docker/dockerfile:1
 
-ARG GRIDKIT_INSTALL_IMAGE=us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit-install:latest
-FROM ${GRIDKIT_INSTALL_IMAGE} AS gridkit-install
+# gridkit-install is currently published only for linux/amd64.
+ARG GRIDKIT_INSTALL_IMAGE=us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit-install@sha256:c045de799e851f176417e311a77028fb7dd86b49bf7e3938ae1ff23502b17621
+ARG RUNTIME_PLATFORM=linux/amd64
 
-FROM mcr.microsoft.com/devcontainers/base:1-ubuntu-24.04
+FROM --platform=${RUNTIME_PLATFORM} ${GRIDKIT_INSTALL_IMAGE} AS gridkit
 
-ARG SUITESPARSE_PREFIX=/opt/suitesparse
-ARG SUNDIALS_PREFIX=/opt/sundials
-ARG GRIDKIT_PREFIX=/opt/gridkit
+FROM --platform=${RUNTIME_PLATFORM} mcr.microsoft.com/devcontainers/base:1-ubuntu-24.04@sha256:763eca1839b2c6366f25b9c2b4c75c46e3d485a8d1b95f725e829397398a4c46
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        ca-certificates \
-        curl \
+RUN apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         libgomp1 \
         libopenblas0 \
         libstdc++6 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=gridkit-install /opt/suitesparse ${SUITESPARSE_PREFIX}
-COPY --from=gridkit-install /opt/sundials ${SUNDIALS_PREFIX}
-COPY --from=gridkit-install /opt/gridkit ${GRIDKIT_PREFIX}
+COPY --from=gridkit /opt/suitesparse/ /opt/suitesparse/
+COPY --from=gridkit /opt/sundials/ /opt/sundials/
+COPY --from=gridkit /opt/gridkit/ /opt/gridkit/
 
-ENV SUITESPARSE_PREFIX=${SUITESPARSE_PREFIX}
-ENV SUNDIALS_PREFIX=${SUNDIALS_PREFIX}
-ENV GRIDKIT_PREFIX=${GRIDKIT_PREFIX}
-ENV LD_LIBRARY_PATH=${GRIDKIT_PREFIX}/lib:${SUNDIALS_PREFIX}/lib:${SUITESPARSE_PREFIX}/lib
+RUN <<'EOF'
+set -eu
 
-RUN printf '%s\n' "${SUITESPARSE_PREFIX}/lib" "${SUNDIALS_PREFIX}/lib" "${GRIDKIT_PREFIX}/lib" > /etc/ld.so.conf.d/gridkit.conf \
-    && ldconfig \
-    && test -d "${GRIDKIT_PREFIX}/bin" \
-    && found_app=0 \
-    && for app in "${GRIDKIT_PREFIX}"/bin/*; do \
-        if [ ! -f "${app}" ] || [ ! -x "${app}" ]; then \
-          continue; \
-        fi; \
-        found_app=1; \
-        if ldd "${app}" 2>/dev/null | grep -q 'not found'; then \
-          echo "unresolved GridKit runtime dependencies for ${app}" >&2; \
-          exit 1; \
-        fi; \
-      done \
-    && test "${found_app}" = "1"
+printf '%s\n' \
+    /opt/suitesparse/lib \
+    /opt/sundials/lib \
+    /opt/gridkit/lib \
+    > /etc/ld.so.conf.d/gridkit.conf
+
+ldconfig
+
+app=/opt/gridkit/bin/DynamicSimulation
+
+if [ ! -x "$app" ]; then
+    echo "GridKit executable is missing or not executable: $app" >&2
+    exit 1
+fi
+
+dependencies="$(ldd "$app")"
+
+case "$dependencies" in
+    *"not found"*)
+        echo "Unresolved GridKit runtime dependencies:" >&2
+        printf '%s\n' "$dependencies" >&2
+        exit 1
+        ;;
+esac
+EOF

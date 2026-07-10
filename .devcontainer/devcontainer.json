@@ -1,10 +1,11 @@
 {
-  "name": "GridKit Runtime",
+  "name": "GridKit Studio Runtime",
   "build": {
     "dockerfile": "Dockerfile",
     "context": "..",
+    "options": ["--pull"],
     "args": {
-      "GRIDKIT_INSTALL_IMAGE": "${localEnv:GRIDKIT_INSTALL_IMAGE:us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit-install:latest}"
+      "RUNTIME_PLATFORM": "linux/amd64"
     }
   },
   "customizations": {
@@ -14,6 +15,8 @@
       }
     }
   },
+  "postCreateCommand": "test -x /opt/gridkit/bin/DynamicSimulation",
+  "postAttachCommand": "bash \"${containerWorkspaceFolder}/.devcontainer/install-studio.sh\" \"${containerWorkspaceFolder}\"",
   "remoteUser": "vscode",
   "updateRemoteUserUID": true
 }
