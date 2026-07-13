@@ -2,3 +2,6 @@
 *.vsix binary
 *.case.json text eol=lf
 *.solver.json text eol=lf
+cases/ACTIVSg70k.case.json filter=lfs diff=lfs merge=lfs -text
+cases/EastWest.json filter=lfs diff=lfs merge=lfs -text
+cases/USA.json filter=lfs diff=lfs merge=lfs -text
