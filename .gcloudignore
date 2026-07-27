@@ -5,6 +5,7 @@
 .github/
 .vscode/
 cases/
+*.run/
 wecc.example/
 *.case.json
 *.solver.json

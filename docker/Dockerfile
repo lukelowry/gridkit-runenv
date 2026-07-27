@@ -36,11 +36,13 @@ FROM ubuntu:${UBUNTU_TAG} AS sundials
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         build-essential cmake ninja-build git ca-certificates libopenblas-dev \
     && rm -rf /var/lib/apt/lists/*
-ARG SUNDIALS_VERSION=v7.4.0
+ARG SUNDIALS_REF=develop
 ARG SUITESPARSE_PREFIX
 ARG SUNDIALS_PREFIX
 COPY --from=suitesparse ${SUITESPARSE_PREFIX} ${SUITESPARSE_PREFIX}
-RUN git clone --depth 1 --branch ${SUNDIALS_VERSION} \
+ARG UPSTREAM_CACHE_BUST=local
+RUN echo "SUNDIALS source refresh: ${UPSTREAM_CACHE_BUST}" \
+    && git clone --depth 1 --branch ${SUNDIALS_REF} \
         https://github.com/LLNL/sundials.git /src/sundials
 WORKDIR /src/sundials/build
 RUN cmake .. -G Ninja \
@@ -52,6 +54,8 @@ RUN cmake .. -G Ninja \
         -DKLU_LIBRARY_DIR=${SUITESPARSE_PREFIX}/lib \
         -DEXAMPLES_ENABLE_C=OFF -DEXAMPLES_ENABLE_CXX=OFF \
     && ninja install \
+    && mkdir -p ${SUNDIALS_PREFIX}/share/gridkit \
+    && git -C /src/sundials rev-parse HEAD > ${SUNDIALS_PREFIX}/share/gridkit/source-commit \
     && find ${SUNDIALS_PREFIX}/lib -name '*.so*' -type f -exec strip --strip-unneeded {} +
 
 # -- Enzyme against the configured LLVM toolchain (build-only) --
@@ -96,7 +100,9 @@ COPY --from=suitesparse ${SUITESPARSE_PREFIX} ${SUITESPARSE_PREFIX}
 COPY --from=sundials    ${SUNDIALS_PREFIX}    ${SUNDIALS_PREFIX}
 COPY --from=enzyme      ${ENZYME_PREFIX}      ${ENZYME_PREFIX}
 ARG GRIDKIT_REF=develop
-RUN git clone https://github.com/ORNL/GridKit.git /src/gridkit \
+ARG UPSTREAM_CACHE_BUST=local
+RUN echo "GridKit source refresh: ${UPSTREAM_CACHE_BUST}" \
+    && git clone https://github.com/ORNL/GridKit.git /src/gridkit \
     && cd /src/gridkit && git checkout ${GRIDKIT_REF} \
     && git submodule update --init third-party/
 WORKDIR /src/gridkit/build
@@ -127,18 +133,20 @@ RUN cmake .. -G Ninja \
 
 # Record the resolved native toolchain in the artifact.
 ARG SUITESPARSE_VERSION=v7.10.2
-ARG SUNDIALS_VERSION=v7.4.0
+ARG SUNDIALS_REF=develop
 ARG GRIDKIT_PREFIX
 RUN <<EOF
 set -e
 cd /src/gridkit
 GRIDKIT_COMMIT=$(git rev-parse HEAD)
+SUNDIALS_COMMIT=$(cat ${SUNDIALS_PREFIX}/share/gridkit/source-commit)
 BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 mkdir -p ${GRIDKIT_PREFIX}/share/gridkit
 cat > ${GRIDKIT_PREFIX}/share/gridkit/toolchain.json <<JSON
 {
   "gridkit_commit": "${GRIDKIT_COMMIT}",
-  "sundials_version": "${SUNDIALS_VERSION}",
+  "sundials_version": "${SUNDIALS_REF}",
+  "sundials_commit": "${SUNDIALS_COMMIT}",
   "suitesparse_version": "${SUITESPARSE_VERSION}",
   "enzyme_enabled": true,
   "image_built_at": "${BUILT_AT}"

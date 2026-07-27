@@ -1,4 +1,5 @@
 {
+  "$schema": "https://gridkit.readthedocs.io/en/schema/case.schema.json",
   "header": {
     "format_version": 0,
     "format_revision": 1,
@@ -15536,7 +15537,6 @@
         "Pvmin": 0.0,
         "Dt": 0.0
       }
-    },
-    {"class": "BusFault", "ports": {"bus": 8}, "id": "fault_1", "params": {"state0": false, "R": 0.0, "X": 0.001}}
+    }
   ]
 }

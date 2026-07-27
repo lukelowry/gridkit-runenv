@@ -1,4 +1,5 @@
 {
+  "$schema": "https://gridkit.readthedocs.io/en/schema/case.schema.json",
   "header": {
     "format_version": 0,
     "format_revision": 1,
