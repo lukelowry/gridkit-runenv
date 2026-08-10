@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "GridKit: List cloud images",
+            "type": "process",
+            "command": "gcloud",
+            "args": [
+                "artifacts",
+                "docker",
+                "images",
+                "list",
+                "us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit-install",
+                "--include-tags",
+                "--sort-by=~UPDATE_TIME",
+                "--format=table(tags.join(sep=',').trailoff(28):label=TAG,updateTime.date('%Y-%m-%d %H:%M'):label=UPDATED,metadata.imageSizeBytes.size():label=SIZE,version.slice(7:19).join(sep=''):label=DIGEST)"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "GridKit: Pull latest install image",
+            "type": "process",
+            "command": "docker",
+            "args": [
+                "pull",
+                "us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit-install:latest"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

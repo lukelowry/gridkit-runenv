@@ -6,6 +6,7 @@ steps:
     args:
       - build
       - --file=docker/Dockerfile
+      - --build-arg=GRIDKIT_REF=develop
       - --build-arg=SOURCE_REVISION=${_SOURCE_REVISION}
       - --build-arg=UPSTREAM_CACHE_BUST=${BUILD_ID}
       - --tag=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:latest

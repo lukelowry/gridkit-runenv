@@ -1,3 +1,17 @@
 {
-    "gridkit.installPrefix": "/opt/gridkit/"
+    "gridkit.installPrefix": "/opt/gridkit/",
+    "VsCodeTaskButtons.tasks": [
+        {
+            "label": "$(list-unordered) List GridKit images",
+            "task": "GridKit: List cloud images",
+            "tooltip": "List GridKit install images in Artifact Registry",
+            "alignment": "left"
+        },
+        {
+            "label": "$(cloud-download) Pull GridKit image",
+            "task": "GridKit: Pull latest install image",
+            "tooltip": "Pull the latest GridKit develop-branch install image",
+            "alignment": "left"
+        }
+    ]
 }

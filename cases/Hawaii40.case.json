@@ -1,24 +1,19 @@
 {
-  "$schema": "https://gridkit.readthedocs.io/en/schema/case.schema.json",
   "header": {
-    "format_version": 0,
-    "format_revision": 1,
+    "format_version": 0.2,
+    "format_revision": 0,
     "case_name": "Hawaii40",
     "case_description": "",
-    "case_comments": "",
+    "case_comments": ""
+  },
+  "params": {
     "freq_base": 60.0,
     "va_base": 100000000.0
   },
-  "monitors": [
-    {
-      "file_name": "mon.csv",
-      "format": "CSV"
-    }
-  ],
   "buses": [
     {
       "number": 1,
-      "class": "bus",
+      "class": "Bus",
       "name": "ALOHA138",
       "init": {
         "Vr": 0.9933554890837188,
@@ -28,8 +23,8 @@
         "kv": 138.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.344246,
@@ -38,7 +33,7 @@
     },
     {
       "number": 2,
-      "class": "bus",
+      "class": "Bus",
       "name": "ALOHA69",
       "init": {
         "Vr": 0.9888972937838254,
@@ -48,8 +43,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.344246,
@@ -58,7 +53,7 @@
     },
     {
       "number": 3,
-      "class": "bus",
+      "class": "Bus",
       "name": "FLOWER69",
       "init": {
         "Vr": 0.9811930036972901,
@@ -68,8 +63,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.347927,
@@ -78,7 +73,7 @@
     },
     {
       "number": 4,
-      "class": "bus",
+      "class": "Bus",
       "name": "WAVE69",
       "init": {
         "Vr": 0.9738821203448729,
@@ -88,8 +83,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.293143,
@@ -98,7 +93,7 @@
     },
     {
       "number": 5,
-      "class": "bus",
+      "class": "Bus",
       "name": "HONOLULU138",
       "init": {
         "Vr": 0.9883394466743185,
@@ -108,8 +103,8 @@
         "kv": 138.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.316548,
@@ -118,7 +113,7 @@
     },
     {
       "number": 6,
-      "class": "bus",
+      "class": "Bus",
       "name": "HONOLULU69",
       "init": {
         "Vr": 0.9766427962322278,
@@ -128,8 +123,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.316548,
@@ -138,7 +133,7 @@
     },
     {
       "number": 7,
-      "class": "bus",
+      "class": "Bus",
       "name": "SURF69",
       "init": {
         "Vr": 0.9757827908567976,
@@ -148,8 +143,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.291518,
@@ -158,7 +153,7 @@
     },
     {
       "number": 8,
-      "class": "bus",
+      "class": "Bus",
       "name": "KANEOHE69",
       "init": {
         "Vr": 0.973775919127018,
@@ -168,8 +163,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.451733,
@@ -178,7 +173,7 @@
     },
     {
       "number": 9,
-      "class": "bus",
+      "class": "Bus",
       "name": "TURTLE138",
       "init": {
         "Vr": 0.9857919111944697,
@@ -188,8 +183,8 @@
         "kv": 138.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.273462,
@@ -198,7 +193,7 @@
     },
     {
       "number": 10,
-      "class": "bus",
+      "class": "Bus",
       "name": "TURTLE69",
       "init": {
         "Vr": 0.9761721212324249,
@@ -208,8 +203,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.273462,
@@ -218,7 +213,7 @@
     },
     {
       "number": 11,
-      "class": "bus",
+      "class": "Bus",
       "name": "MAHALO69",
       "init": {
         "Vr": 0.9686003312495869,
@@ -228,8 +223,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.35548,
@@ -238,7 +233,7 @@
     },
     {
       "number": 12,
-      "class": "bus",
+      "class": "Bus",
       "name": "LYCHEE69",
       "init": {
         "Vr": 0.9716135436231604,
@@ -248,8 +243,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.32021,
@@ -258,7 +253,7 @@
     },
     {
       "number": 13,
-      "class": "bus",
+      "class": "Bus",
       "name": "COCONUT69",
       "init": {
         "Vr": 0.9734195161562008,
@@ -268,8 +263,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.290612,
@@ -278,7 +273,7 @@
     },
     {
       "number": 14,
-      "class": "bus",
+      "class": "Bus",
       "name": "KAILUA138",
       "init": {
         "Vr": 0.9822907352627478,
@@ -288,8 +283,8 @@
         "kv": 138.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.395084,
@@ -298,7 +293,7 @@
     },
     {
       "number": 15,
-      "class": "bus",
+      "class": "Bus",
       "name": "KAILUA69",
       "init": {
         "Vr": 0.9732168276848236,
@@ -308,8 +303,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.395084,
@@ -318,7 +313,7 @@
     },
     {
       "number": 16,
-      "class": "bus",
+      "class": "Bus",
       "name": "PALM69",
       "init": {
         "Vr": 0.9759580418422681,
@@ -328,8 +323,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.311063,
@@ -338,7 +333,7 @@
     },
     {
       "number": 17,
-      "class": "bus",
+      "class": "Bus",
       "name": "WAIMANALO69",
       "init": {
         "Vr": 0.9682619551937502,
@@ -348,8 +343,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.335013,
@@ -358,7 +353,7 @@
     },
     {
       "number": 18,
-      "class": "bus",
+      "class": "Bus",
       "name": "VOLCANO69",
       "init": {
         "Vr": 0.9684321176484824,
@@ -368,8 +363,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.294518,
@@ -378,7 +373,7 @@
     },
     {
       "number": 19,
-      "class": "bus",
+      "class": "Bus",
       "name": "PEARL CITY69",
       "init": {
         "Vr": 0.9894399708899317,
@@ -388,8 +383,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.417374,
@@ -398,7 +393,7 @@
     },
     {
       "number": 20,
-      "class": "bus",
+      "class": "Bus",
       "name": "MILILANI69",
       "init": {
         "Vr": 0.9890789801711597,
@@ -408,8 +403,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.482531,
@@ -418,7 +413,7 @@
     },
     {
       "number": 21,
-      "class": "bus",
+      "class": "Bus",
       "name": "AIEA69",
       "init": {
         "Vr": 0.9758027876378388,
@@ -428,8 +423,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.406053,
@@ -438,7 +433,7 @@
     },
     {
       "number": 22,
-      "class": "bus",
+      "class": "Bus",
       "name": "WAIPAHU138",
       "init": {
         "Vr": 0.9962891683218738,
@@ -448,8 +443,8 @@
         "kv": 138.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.417469,
@@ -458,7 +453,7 @@
     },
     {
       "number": 23,
-      "class": "bus",
+      "class": "Bus",
       "name": "WAIPAHU69",
       "init": {
         "Vr": 0.9993245410961284,
@@ -468,8 +463,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.417469,
@@ -478,7 +473,7 @@
     },
     {
       "number": 24,
-      "class": "bus",
+      "class": "Bus",
       "name": "KAPOLEI69",
       "init": {
         "Vr": 0.9913236543143062,
@@ -488,8 +483,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.363106,
@@ -498,7 +493,7 @@
     },
     {
       "number": 25,
-      "class": "bus",
+      "class": "Bus",
       "name": "EWA BEACH138",
       "init": {
         "Vr": 0.9965716331358563,
@@ -508,8 +503,8 @@
         "kv": 138.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.344756,
@@ -518,7 +513,7 @@
     },
     {
       "number": 26,
-      "class": "bus",
+      "class": "Bus",
       "name": "EWA BEACH69",
       "init": {
         "Vr": 0.9931443739491943,
@@ -528,8 +523,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.344756,
@@ -538,7 +533,7 @@
     },
     {
       "number": 27,
-      "class": "bus",
+      "class": "Bus",
       "name": "KAHUKU69",
       "init": {
         "Vr": 1.0031325853916575,
@@ -548,8 +543,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.658692,
@@ -558,7 +553,7 @@
     },
     {
       "number": 28,
-      "class": "bus",
+      "class": "Bus",
       "name": "HALEIWA69",
       "init": {
         "Vr": 0.9999916562520018,
@@ -568,8 +563,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.621367,
@@ -578,7 +573,7 @@
     },
     {
       "number": 29,
-      "class": "bus",
+      "class": "Bus",
       "name": "LAIE69",
       "init": {
         "Vr": 0.9953819174035222,
@@ -588,8 +583,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.618479,
@@ -598,7 +593,7 @@
     },
     {
       "number": 30,
-      "class": "bus",
+      "class": "Bus",
       "name": "WAHIAWA69",
       "init": {
         "Vr": 0.9957712787931653,
@@ -608,8 +603,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.57139,
@@ -618,7 +613,7 @@
     },
     {
       "number": 31,
-      "class": "bus",
+      "class": "Bus",
       "name": "WAIALUA69",
       "init": {
         "Vr": 0.9945454639992279,
@@ -628,8 +623,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.56364,
@@ -638,7 +633,7 @@
     },
     {
       "number": 32,
-      "class": "bus",
+      "class": "Bus",
       "name": "HAUULA69",
       "init": {
         "Vr": 0.9909531864741683,
@@ -648,8 +643,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.55775,
@@ -658,7 +653,7 @@
     },
     {
       "number": 33,
-      "class": "bus",
+      "class": "Bus",
       "name": "WAIANAE69",
       "init": {
         "Vr": 0.9942413094454278,
@@ -668,8 +663,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.468626,
@@ -678,7 +673,7 @@
     },
     {
       "number": 34,
-      "class": "bus",
+      "class": "Bus",
       "name": "SCHOFIELD69",
       "init": {
         "Vr": 0.9993384407388413,
@@ -688,8 +683,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.4785,
@@ -698,7 +693,7 @@
     },
     {
       "number": 35,
-      "class": "bus",
+      "class": "Bus",
       "name": "KALAELOA138",
       "init": {
         "Vr": 0.9999784225862298,
@@ -708,8 +703,8 @@
         "kv": 138.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.303419,
@@ -718,7 +713,7 @@
     },
     {
       "number": 36,
-      "class": "bus",
+      "class": "Bus",
       "name": "COGEN69",
       "init": {
         "Vr": 0.9946436670181082,
@@ -728,8 +723,8 @@
         "kv": 69.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.311667,
@@ -738,7 +733,7 @@
     },
     {
       "number": 37,
-      "class": "bus",
+      "class": "Bus",
       "name": "KAHE138",
       "init": {
         "Vr": 0.9999903715084036,
@@ -748,8 +743,8 @@
         "kv": 138.0
       },
       "mon": [
-        "Vr",
-        "Vi"
+        "Vm",
+        "Va"
       ],
       "extension": {
         "latitude": 21.356395,
@@ -759,16 +754,20 @@
   ],
   "signals": [
     {
-      "signal_id": 1,
-      "name": "2_1_speed"
+      "signal_id": 0,
+      "name": "2_1_pmech"
     },
     {
-      "signal_id": 2,
+      "signal_id": 1,
       "name": "2_1_efd"
     },
     {
+      "signal_id": 2,
+      "name": "2_1_speed"
+    },
+    {
       "signal_id": 3,
-      "name": "2_2_speed"
+      "name": "2_2_pmech"
     },
     {
       "signal_id": 4,
@@ -776,3522 +775,2265 @@
     },
     {
       "signal_id": 5,
-      "name": "2_3_speed"
+      "name": "2_2_speed"
     },
     {
       "signal_id": 6,
-      "name": "2_3_efd"
+      "name": "2_3_pmech"
     },
     {
       "signal_id": 7,
-      "name": "2_4_speed"
+      "name": "2_3_efd"
     },
     {
       "signal_id": 8,
-      "name": "2_4_efd"
+      "name": "2_3_speed"
     },
     {
       "signal_id": 9,
-      "name": "23_1_speed"
+      "name": "2_4_pmech"
     },
     {
       "signal_id": 10,
-      "name": "23_1_vs"
+      "name": "2_4_efd"
     },
     {
       "signal_id": 11,
-      "name": "23_2_speed"
+      "name": "2_4_speed"
     },
     {
       "signal_id": 12,
-      "name": "23_2_vs"
+      "name": "23_1_pmech"
     },
     {
       "signal_id": 13,
-      "name": "23_3_speed"
+      "name": "23_1_efd"
     },
     {
       "signal_id": 14,
-      "name": "23_3_vs"
+      "name": "23_1_speed"
     },
     {
       "signal_id": 15,
-      "name": "23_4_speed"
+      "name": "23_1_vs"
     },
     {
       "signal_id": 16,
-      "name": "23_4_vs"
+      "name": "23_10_ibranchr"
     },
     {
       "signal_id": 17,
-      "name": "23_5_speed"
+      "name": "23_10_ibranchi"
     },
     {
       "signal_id": 18,
-      "name": "23_5_vs"
+      "name": "23_10_pbranch"
     },
     {
       "signal_id": 19,
-      "name": "23_6_speed"
+      "name": "23_10_qbranch"
     },
     {
       "signal_id": 20,
-      "name": "23_6_vs"
+      "name": "23_2_pmech"
     },
     {
       "signal_id": 21,
-      "name": "23_7_speed"
+      "name": "23_2_efd"
     },
     {
       "signal_id": 22,
-      "name": "23_7_vs"
+      "name": "23_2_speed"
     },
     {
       "signal_id": 23,
-      "name": "23_8_speed"
+      "name": "23_2_vs"
     },
     {
       "signal_id": 24,
-      "name": "23_8_vs"
+      "name": "23_3_pmech"
     },
     {
       "signal_id": 25,
-      "name": "34_1_speed"
+      "name": "23_3_efd"
     },
     {
       "signal_id": 26,
-      "name": "34_2_speed"
+      "name": "23_3_speed"
     },
     {
       "signal_id": 27,
-      "name": "34_3_speed"
+      "name": "23_3_vs"
     },
     {
       "signal_id": 28,
-      "name": "34_4_speed"
+      "name": "23_4_pmech"
     },
     {
       "signal_id": 29,
-      "name": "34_5_speed"
+      "name": "23_4_efd"
     },
     {
       "signal_id": 30,
-      "name": "34_6_speed"
+      "name": "23_4_speed"
     },
     {
       "signal_id": 31,
-      "name": "35_1_speed"
+      "name": "23_4_vs"
     },
     {
       "signal_id": 32,
-      "name": "35_1_vs"
+      "name": "23_5_pmech"
     },
     {
       "signal_id": 33,
-      "name": "35_2_speed"
+      "name": "23_5_efd"
     },
     {
       "signal_id": 34,
-      "name": "35_2_vs"
+      "name": "23_5_speed"
     },
     {
       "signal_id": 35,
-      "name": "35_3_speed"
+      "name": "23_5_vs"
     },
     {
       "signal_id": 36,
-      "name": "35_3_vs"
+      "name": "23_6_pmech"
     },
     {
       "signal_id": 37,
-      "name": "35_4_speed"
+      "name": "23_6_efd"
     },
     {
       "signal_id": 38,
-      "name": "35_4_vs"
+      "name": "23_6_speed"
     },
     {
       "signal_id": 39,
-      "name": "35_5_speed"
+      "name": "23_6_vs"
     },
     {
       "signal_id": 40,
-      "name": "35_5_vs"
+      "name": "23_7_pmech"
     },
     {
       "signal_id": 41,
-      "name": "35_6_speed"
+      "name": "23_7_efd"
     },
     {
       "signal_id": 42,
-      "name": "35_6_vs"
+      "name": "23_7_speed"
     },
     {
       "signal_id": 43,
-      "name": "35_7_speed"
+      "name": "23_7_vs"
     },
     {
       "signal_id": 44,
-      "name": "35_7_vs"
+      "name": "23_8_pmech"
     },
     {
       "signal_id": 45,
-      "name": "35_8_speed"
+      "name": "23_8_efd"
     },
     {
       "signal_id": 46,
-      "name": "35_8_vs"
+      "name": "23_8_speed"
     },
     {
       "signal_id": 47,
-      "name": "36_1_speed"
+      "name": "23_8_vs"
     },
     {
       "signal_id": 48,
-      "name": "36_1_efd"
+      "name": "23_9_ibranchr"
     },
     {
       "signal_id": 49,
-      "name": "36_2_speed"
+      "name": "23_9_ibranchi"
     },
     {
       "signal_id": 50,
-      "name": "36_2_efd"
+      "name": "23_9_pbranch"
     },
     {
       "signal_id": 51,
-      "name": "36_3_speed"
+      "name": "23_9_qbranch"
     },
     {
       "signal_id": 52,
-      "name": "36_3_efd"
+      "name": "26_1_ibranchr"
     },
     {
       "signal_id": 53,
-      "name": "36_4_speed"
+      "name": "26_1_ibranchi"
     },
     {
       "signal_id": 54,
-      "name": "36_4_efd"
+      "name": "26_1_pbranch"
     },
     {
       "signal_id": 55,
-      "name": "37_1_speed"
+      "name": "26_1_qbranch"
     },
     {
       "signal_id": 56,
-      "name": "37_2_speed"
+      "name": "26_2_ibranchr"
     },
     {
       "signal_id": 57,
-      "name": "37_3_speed"
+      "name": "26_2_ibranchi"
     },
     {
       "signal_id": 58,
-      "name": "37_4_speed"
+      "name": "26_2_pbranch"
     },
     {
       "signal_id": 59,
-      "name": "37_5_speed"
+      "name": "26_2_qbranch"
     },
     {
       "signal_id": 60,
-      "name": "37_6_speed"
+      "name": "27_1_ibranchr"
     },
     {
       "signal_id": 61,
-      "name": "23_10_speed"
+      "name": "27_1_ibranchi"
     },
     {
       "signal_id": 62,
-      "name": "23_9_speed"
+      "name": "27_1_pbranch"
     },
     {
       "signal_id": 63,
-      "name": "26_1_speed"
+      "name": "27_1_qbranch"
     },
     {
       "signal_id": 64,
-      "name": "26_2_speed"
+      "name": "27_2_ibranchr"
     },
     {
       "signal_id": 65,
-      "name": "27_1_speed"
+      "name": "27_2_ibranchi"
     },
     {
       "signal_id": 66,
-      "name": "27_2_speed"
+      "name": "27_2_pbranch"
     },
     {
       "signal_id": 67,
-      "name": "28_1_speed"
+      "name": "27_2_qbranch"
     },
     {
       "signal_id": 68,
-      "name": "28_2_speed"
+      "name": "28_1_ibranchr"
     },
     {
       "signal_id": 69,
-      "name": "33_1_speed"
+      "name": "28_1_ibranchi"
+    },
+    {
+      "signal_id": 70,
+      "name": "28_1_pbranch"
+    },
+    {
+      "signal_id": 71,
+      "name": "28_1_qbranch"
+    },
+    {
+      "signal_id": 72,
+      "name": "28_2_ibranchr"
+    },
+    {
+      "signal_id": 73,
+      "name": "28_2_ibranchi"
+    },
+    {
+      "signal_id": 74,
+      "name": "28_2_pbranch"
+    },
+    {
+      "signal_id": 75,
+      "name": "28_2_qbranch"
+    },
+    {
+      "signal_id": 76,
+      "name": "33_1_ibranchr"
+    },
+    {
+      "signal_id": 77,
+      "name": "33_1_ibranchi"
+    },
+    {
+      "signal_id": 78,
+      "name": "33_1_pbranch"
+    },
+    {
+      "signal_id": 79,
+      "name": "33_1_qbranch"
+    },
+    {
+      "signal_id": 80,
+      "name": "34_1_pmech"
+    },
+    {
+      "signal_id": 81,
+      "name": "34_1_efd"
+    },
+    {
+      "signal_id": 82,
+      "name": "34_1_speed"
+    },
+    {
+      "signal_id": 83,
+      "name": "34_2_pmech"
+    },
+    {
+      "signal_id": 84,
+      "name": "34_2_efd"
+    },
+    {
+      "signal_id": 85,
+      "name": "34_2_speed"
+    },
+    {
+      "signal_id": 86,
+      "name": "34_3_pmech"
+    },
+    {
+      "signal_id": 87,
+      "name": "34_3_efd"
+    },
+    {
+      "signal_id": 88,
+      "name": "34_3_speed"
+    },
+    {
+      "signal_id": 89,
+      "name": "34_4_pmech"
+    },
+    {
+      "signal_id": 90,
+      "name": "34_4_efd"
+    },
+    {
+      "signal_id": 91,
+      "name": "34_4_speed"
+    },
+    {
+      "signal_id": 92,
+      "name": "34_5_pmech"
+    },
+    {
+      "signal_id": 93,
+      "name": "34_5_efd"
+    },
+    {
+      "signal_id": 94,
+      "name": "34_5_speed"
+    },
+    {
+      "signal_id": 95,
+      "name": "34_6_pmech"
+    },
+    {
+      "signal_id": 96,
+      "name": "34_6_efd"
+    },
+    {
+      "signal_id": 97,
+      "name": "34_6_speed"
+    },
+    {
+      "signal_id": 98,
+      "name": "35_1_pmech"
+    },
+    {
+      "signal_id": 99,
+      "name": "35_1_efd"
+    },
+    {
+      "signal_id": 100,
+      "name": "35_1_speed"
+    },
+    {
+      "signal_id": 101,
+      "name": "35_1_vs"
+    },
+    {
+      "signal_id": 102,
+      "name": "35_2_pmech"
+    },
+    {
+      "signal_id": 103,
+      "name": "35_2_efd"
+    },
+    {
+      "signal_id": 104,
+      "name": "35_2_speed"
+    },
+    {
+      "signal_id": 105,
+      "name": "35_2_vs"
+    },
+    {
+      "signal_id": 106,
+      "name": "35_4_pmech"
+    },
+    {
+      "signal_id": 107,
+      "name": "35_4_efd"
+    },
+    {
+      "signal_id": 108,
+      "name": "35_4_speed"
+    },
+    {
+      "signal_id": 109,
+      "name": "35_4_vs"
+    },
+    {
+      "signal_id": 110,
+      "name": "35_5_pmech"
+    },
+    {
+      "signal_id": 111,
+      "name": "35_5_efd"
+    },
+    {
+      "signal_id": 112,
+      "name": "35_5_speed"
+    },
+    {
+      "signal_id": 113,
+      "name": "35_5_vs"
+    },
+    {
+      "signal_id": 114,
+      "name": "35_7_pmech"
+    },
+    {
+      "signal_id": 115,
+      "name": "35_7_efd"
+    },
+    {
+      "signal_id": 116,
+      "name": "35_7_speed"
+    },
+    {
+      "signal_id": 117,
+      "name": "35_7_vs"
+    },
+    {
+      "signal_id": 118,
+      "name": "35_8_pmech"
+    },
+    {
+      "signal_id": 119,
+      "name": "35_8_efd"
+    },
+    {
+      "signal_id": 120,
+      "name": "35_8_speed"
+    },
+    {
+      "signal_id": 121,
+      "name": "35_8_vs"
+    },
+    {
+      "signal_id": 122,
+      "name": "36_1_pmech"
+    },
+    {
+      "signal_id": 123,
+      "name": "36_1_efd"
+    },
+    {
+      "signal_id": 124,
+      "name": "36_1_speed"
+    },
+    {
+      "signal_id": 125,
+      "name": "36_2_pmech"
+    },
+    {
+      "signal_id": 126,
+      "name": "36_2_efd"
+    },
+    {
+      "signal_id": 127,
+      "name": "36_2_speed"
+    },
+    {
+      "signal_id": 128,
+      "name": "36_3_pmech"
+    },
+    {
+      "signal_id": 129,
+      "name": "36_3_efd"
+    },
+    {
+      "signal_id": 130,
+      "name": "36_3_speed"
+    },
+    {
+      "signal_id": 131,
+      "name": "36_4_pmech"
+    },
+    {
+      "signal_id": 132,
+      "name": "36_4_efd"
+    },
+    {
+      "signal_id": 133,
+      "name": "36_4_speed"
+    },
+    {
+      "signal_id": 134,
+      "name": "37_3_pmech"
+    },
+    {
+      "signal_id": 135,
+      "name": "37_3_efd"
+    },
+    {
+      "signal_id": 136,
+      "name": "37_3_speed"
+    },
+    {
+      "signal_id": 137,
+      "name": "37_5_pmech"
+    },
+    {
+      "signal_id": 138,
+      "name": "37_5_efd"
+    },
+    {
+      "signal_id": 139,
+      "name": "37_5_speed"
     }
   ],
   "devices": [
     {
       "class": "Branch",
+      "id": "branch_1_2_1",
       "ports": {
         "bus1": 1,
         "bus2": 2
       },
-      "id": "BR_1_2_1",
       "params": {
         "R": 0.004840000066906214,
         "X": 0.12376599758863449,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_2_2",
       "ports": {
         "bus1": 1,
         "bus2": 2
       },
-      "id": "BR_1_2_2",
       "params": {
         "R": 0.004840000066906214,
         "X": 0.12376599758863449,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_2_3",
       "ports": {
         "bus1": 1,
         "bus2": 2
       },
-      "id": "BR_1_2_3",
       "params": {
         "R": 0.004840000066906214,
         "X": 0.12376599758863449,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_5_1",
       "ports": {
         "bus1": 1,
         "bus2": 5
       },
-      "id": "BR_1_5_1",
       "params": {
         "R": 0.0034000000450760126,
         "X": 0.020912999287247658,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.008460000157356262,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_5_2",
       "ports": {
         "bus1": 1,
         "bus2": 5
       },
-      "id": "BR_1_5_2",
       "params": {
         "R": 0.0034000000450760126,
         "X": 0.020912999287247658,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.008460000157356262,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_22_1",
       "ports": {
         "bus1": 1,
         "bus2": 22
       },
-      "id": "BR_1_22_1",
       "params": {
         "R": 0.0037400000728666782,
         "X": 0.02417300082743168,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.006049999967217445,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_25_1",
       "ports": {
         "bus1": 1,
         "bus2": 25
       },
-      "id": "BR_1_25_1",
       "params": {
         "R": 0.0028899998869746923,
         "X": 0.015798000618815422,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.007710000034421682,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_25_2",
       "ports": {
         "bus1": 1,
         "bus2": 25
       },
-      "id": "BR_1_25_2",
       "params": {
         "R": 0.0028899998869746923,
         "X": 0.015798000618815422,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.007710000034421682,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_35_1",
       "ports": {
         "bus1": 1,
         "bus2": 35
       },
-      "id": "BR_1_35_1",
       "params": {
         "R": 0.01080000028014183,
         "X": 0.04192199930548668,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.012839999981224537,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_1_35_2",
       "ports": {
         "bus1": 1,
         "bus2": 35
       },
-      "id": "BR_1_35_2",
       "params": {
         "R": 0.01080000028014183,
         "X": 0.04192199930548668,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.012839999981224537,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_4_1",
       "ports": {
         "bus1": 2,
         "bus2": 4
       },
-      "id": "BR_2_4_1",
       "params": {
         "R": 0.04295999929308891,
         "X": 0.07935699820518494,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.002570000011473894,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_6_1",
       "ports": {
         "bus1": 2,
         "bus2": 6
       },
-      "id": "BR_2_6_1",
       "params": {
         "R": 0.026890000328421593,
         "X": 0.05860000103712082,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.003120000008493662,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_6_2",
       "ports": {
         "bus1": 2,
         "bus2": 6
       },
-      "id": "BR_2_6_2",
       "params": {
         "R": 0.026890000328421593,
         "X": 0.05860000103712082,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.003120000008493662,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_7_1",
       "ports": {
         "bus1": 2,
         "bus2": 7
       },
-      "id": "BR_2_7_1",
       "params": {
         "R": 0.027540000155568123,
         "X": 0.07569099962711334,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0037700000684708357,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_21_1",
       "ports": {
         "bus1": 2,
         "bus2": 21
       },
-      "id": "BR_2_21_1",
       "params": {
         "R": 0.03646000102162361,
         "X": 0.07733699679374695,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0017300000181421638,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_23_1",
       "ports": {
         "bus1": 2,
         "bus2": 23
       },
-      "id": "BR_2_23_1",
       "params": {
         "R": 0.03262000158429146,
         "X": 0.0810299962759018,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0017999999690800905,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_23_2",
       "ports": {
         "bus1": 2,
         "bus2": 23
       },
-      "id": "BR_2_23_2",
       "params": {
         "R": 0.03262000158429146,
         "X": 0.0810299962759018,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0017999999690800905,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_23_3",
       "ports": {
         "bus1": 2,
         "bus2": 23
       },
-      "id": "BR_2_23_3",
       "params": {
         "R": 0.03262000158429146,
         "X": 0.0810299962759018,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0017999999690800905,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_26_1",
       "ports": {
         "bus1": 2,
         "bus2": 26
       },
-      "id": "BR_2_26_1",
       "params": {
         "R": 0.030489999800920486,
         "X": 0.06611599773168564,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0018599999602884054,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_2_26_2",
       "ports": {
         "bus1": 2,
         "bus2": 26
       },
-      "id": "BR_2_26_2",
       "params": {
         "R": 0.030489999800920486,
         "X": 0.06611599773168564,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0018599999602884054,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_3_6_1",
       "ports": {
         "bus1": 3,
         "bus2": 6
       },
-      "id": "BR_3_6_1",
       "params": {
         "R": 0.014779999852180481,
         "X": 0.03669000044465065,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0010400000028312206,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_3_6_2",
       "ports": {
         "bus1": 3,
         "bus2": 6
       },
-      "id": "BR_3_6_2",
       "params": {
         "R": 0.014779999852180481,
         "X": 0.03669000044465065,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0010400000028312206,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_3_16_1",
       "ports": {
         "bus1": 3,
         "bus2": 16
       },
-      "id": "BR_3_16_1",
       "params": {
         "R": 0.023830000311136246,
         "X": 0.06358499825000763,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.005040000192821026,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_3_19_1",
       "ports": {
         "bus1": 3,
         "bus2": 19
       },
-      "id": "BR_3_19_1",
       "params": {
         "R": 0.013819999992847443,
         "X": 0.03122900053858757,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.005410000216215849,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_3_19_2",
       "ports": {
         "bus1": 3,
         "bus2": 19
       },
-      "id": "BR_3_19_2",
       "params": {
         "R": 0.013819999992847443,
         "X": 0.03122900053858757,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.005410000216215849,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_3_19_3",
       "ports": {
         "bus1": 3,
         "bus2": 19
       },
-      "id": "BR_3_19_3",
       "params": {
         "R": 0.013819999992847443,
         "X": 0.03122900053858757,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.005410000216215849,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_3_21_1",
       "ports": {
         "bus1": 3,
         "bus2": 21
       },
-      "id": "BR_3_21_1",
       "params": {
         "R": 0.024229999631643295,
         "X": 0.04750800132751465,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0015200000489130616,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_4_13_1",
       "ports": {
         "bus1": 4,
         "bus2": 13
       },
-      "id": "BR_4_13_1",
       "params": {
         "R": 0.012140000239014626,
         "X": 0.03848600015044212,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0017000000225380063,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_5_6_1",
       "ports": {
         "bus1": 5,
         "bus2": 6
       },
-      "id": "BR_5_6_1",
       "params": {
         "R": 0.0047900001518428326,
         "X": 0.13955900073051453,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_5_9_1",
       "ports": {
         "bus1": 5,
         "bus2": 9
       },
-      "id": "BR_5_9_1",
       "params": {
         "R": 0.0022899999748915434,
         "X": 0.012058000080287457,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.004089999943971634,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_5_14_1",
       "ports": {
         "bus1": 5,
         "bus2": 14
       },
-      "id": "BR_5_14_1",
       "params": {
         "R": 0.005739999935030937,
         "X": 0.03881499916315079,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.006870000157505274,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_6_11_1",
       "ports": {
         "bus1": 6,
         "bus2": 11
       },
-      "id": "BR_6_11_1",
       "params": {
         "R": 0.01979999989271164,
         "X": 0.04239499941468239,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0009699999936856329,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_6_12_1",
       "ports": {
         "bus1": 6,
         "bus2": 12
       },
-      "id": "BR_6_12_1",
       "params": {
         "R": 0.01363999955356121,
         "X": 0.033190999180078506,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0006600000197067857,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_6_12_2",
       "ports": {
         "bus1": 6,
         "bus2": 12
       },
-      "id": "BR_6_12_2",
       "params": {
         "R": 0.01363999955356121,
         "X": 0.033190999180078506,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0006600000197067857,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_7_6_1",
       "ports": {
         "bus1": 7,
         "bus2": 6
       },
-      "id": "BR_7_6_1",
       "params": {
         "R": 0.004000000189989805,
         "X": 0.009999999776482582,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0009599999757483602,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_7_6_2",
       "ports": {
         "bus1": 7,
         "bus2": 6
       },
-      "id": "BR_7_6_2",
       "params": {
         "R": 0.004000000189989805,
         "X": 0.009999999776482582,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0009599999757483602,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_7_6_3",
       "ports": {
         "bus1": 7,
         "bus2": 6
       },
-      "id": "BR_7_6_3",
       "params": {
         "R": 0.004000000189989805,
         "X": 0.009999999776482582,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0009599999757483602,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_7_10_1",
       "ports": {
         "bus1": 7,
         "bus2": 10
       },
-      "id": "BR_7_10_1",
       "params": {
         "R": 0.004000000189989805,
         "X": 0.009999999776482582,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0009599999757483602,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_7_13_2",
       "ports": {
         "bus1": 7,
         "bus2": 13
       },
-      "id": "BR_7_13_1",
       "params": {
         "R": 0.009410000406205654,
         "X": 0.027705999091267586,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0009599999757483602,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_7_13_3",
       "ports": {
         "bus1": 7,
         "bus2": 13
       },
-      "id": "BR_7_13_2",
       "params": {
         "R": 0.009410000406205654,
         "X": 0.027705999091267586,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0009599999757483602,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_7_13_1",
       "ports": {
         "bus1": 7,
         "bus2": 13
       },
-      "id": "BR_7_13_3",
       "params": {
         "R": 0.009410000406205654,
         "X": 0.027705999091267586,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0009599999757483602,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_8_15_1",
       "ports": {
         "bus1": 8,
         "bus2": 15
       },
-      "id": "BR_8_15_1",
       "params": {
         "R": 0.0313900001347065,
         "X": 0.07584799826145172,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.001970000099390745,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_8_19_2",
       "ports": {
         "bus1": 8,
         "bus2": 19
       },
-      "id": "BR_8_19_1",
       "params": {
         "R": 0.036990001797676086,
         "X": 0.102462999522686,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.002460000105202198,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_8_19_1",
       "ports": {
         "bus1": 8,
         "bus2": 19
       },
-      "id": "BR_8_19_2",
       "params": {
         "R": 0.036990001797676086,
         "X": 0.102462999522686,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.002460000105202198,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_9_10_1",
       "ports": {
         "bus1": 9,
         "bus2": 10
       },
-      "id": "BR_9_10_1",
       "params": {
         "R": 0.004679999779909849,
         "X": 0.12565399706363678,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_9_14_1",
       "ports": {
         "bus1": 9,
         "bus2": 14
       },
-      "id": "BR_9_14_1",
       "params": {
         "R": 0.009329999797046185,
         "X": 0.03784799948334694,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.010169999673962593,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_11_13_1",
       "ports": {
         "bus1": 11,
         "bus2": 13
       },
-      "id": "BR_11_13_1",
       "params": {
         "R": 0.01844000071287155,
         "X": 0.04777099937200546,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.002240000059828162,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_11_15_1",
       "ports": {
         "bus1": 11,
         "bus2": 15
       },
-      "id": "BR_11_15_1",
       "params": {
         "R": 0.023280000314116478,
         "X": 0.06922099739313126,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0015200000489130616,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_12_15_1",
       "ports": {
         "bus1": 12,
         "bus2": 15
       },
-      "id": "BR_12_15_1",
       "params": {
         "R": 0.015110000036656857,
         "X": 0.041464000940322876,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.004139999859035015,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_12_17_1",
       "ports": {
         "bus1": 12,
         "bus2": 17
       },
-      "id": "BR_12_17_1",
       "params": {
         "R": 0.022779999300837517,
         "X": 0.06534100323915482,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0028200000524520874,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_13_16_1",
       "ports": {
         "bus1": 13,
         "bus2": 16
       },
-      "id": "BR_13_16_1",
       "params": {
         "R": 0.013089999556541443,
         "X": 0.0325470007956028,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0010999999940395355,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_14_15_1",
       "ports": {
         "bus1": 14,
         "bus2": 15
       },
-      "id": "BR_14_15_1",
       "params": {
         "R": 0.0032500000670552254,
         "X": 0.13152199983596802,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_14_15_2",
       "ports": {
         "bus1": 14,
         "bus2": 15
       },
-      "id": "BR_14_15_2",
       "params": {
         "R": 0.0032500000670552254,
         "X": 0.13152199983596802,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_16_18_1",
       "ports": {
         "bus1": 16,
         "bus2": 18
       },
-      "id": "BR_16_18_1",
       "params": {
         "R": 0.015530000440776348,
         "X": 0.03922799974679947,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0019099999917671084,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_17_18_1",
       "ports": {
         "bus1": 17,
         "bus2": 18
       },
-      "id": "BR_17_18_1",
       "params": {
         "R": 0.009840000420808792,
         "X": 0.029753999784588814,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.001449999981559813,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_19_23_1",
       "ports": {
         "bus1": 19,
         "bus2": 23
       },
-      "id": "BR_19_23_1",
       "params": {
         "R": 0.01257999986410141,
         "X": 0.030448999255895615,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0013299999991431832,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_19_23_2",
       "ports": {
         "bus1": 19,
         "bus2": 23
       },
-      "id": "BR_19_23_2",
       "params": {
         "R": 0.01257999986410141,
         "X": 0.030448999255895615,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0013299999991431832,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_19_23_3",
       "ports": {
         "bus1": 19,
         "bus2": 23
       },
-      "id": "BR_19_23_3",
       "params": {
         "R": 0.01257999986410141,
         "X": 0.030448999255895615,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0013299999991431832,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_19_23_4",
       "ports": {
         "bus1": 19,
         "bus2": 23
       },
-      "id": "BR_19_23_4",
       "params": {
         "R": 0.01257999986410141,
         "X": 0.030448999255895615,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0013299999991431832,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_20_23_1",
       "ports": {
         "bus1": 20,
         "bus2": 23
       },
-      "id": "BR_20_23_1",
       "params": {
         "R": 0.042660001665353775,
         "X": 0.07484400272369385,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0017900000093504786,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_20_30_1",
       "ports": {
         "bus1": 20,
         "bus2": 30
       },
-      "id": "BR_20_30_1",
       "params": {
         "R": 0.027799999341368675,
         "X": 0.0684870034456253,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.003000000026077032,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_20_32_1",
       "ports": {
         "bus1": 20,
         "bus2": 32
       },
-      "id": "BR_20_32_1",
       "params": {
         "R": 0.014940000139176846,
         "X": 0.03991600126028061,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0033499998971819878,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_22_23_1",
       "ports": {
         "bus1": 22,
         "bus2": 23
       },
-      "id": "BR_22_23_1",
       "params": {
         "R": 0.004449999891221523,
         "X": 0.11658000200986862,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_22_23_2",
       "ports": {
         "bus1": 22,
         "bus2": 23
       },
-      "id": "BR_22_23_2",
       "params": {
         "R": 0.004449999891221523,
         "X": 0.11658000200986862,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_22_23_3",
       "ports": {
         "bus1": 22,
         "bus2": 23
       },
-      "id": "BR_22_23_3",
       "params": {
         "R": 0.004449999891221523,
         "X": 0.11658000200986862,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_22_25_1",
       "ports": {
         "bus1": 22,
         "bus2": 25
       },
-      "id": "BR_22_25_1",
       "params": {
         "R": 0.0029800001066178083,
         "X": 0.0176790002733469,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.00774999987334013,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_22_37_1",
       "ports": {
         "bus1": 22,
         "bus2": 37
       },
-      "id": "BR_22_37_1",
       "params": {
         "R": 0.006819999776780605,
         "X": 0.0408409982919693,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.01104000024497509,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_23_34_1",
       "ports": {
         "bus1": 23,
         "bus2": 34
       },
-      "id": "BR_23_34_1",
       "params": {
         "R": 0.030139999464154243,
         "X": 0.09171999990940094,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.001930000027641654,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_23_34_2",
       "ports": {
         "bus1": 23,
         "bus2": 34
       },
-      "id": "BR_23_34_2",
       "params": {
         "R": 0.030139999464154243,
         "X": 0.09171999990940094,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.001930000027641654,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_24_26_1",
       "ports": {
         "bus1": 24,
         "bus2": 26
       },
-      "id": "BR_24_26_1",
       "params": {
         "R": 0.016450000926852226,
         "X": 0.05347999930381775,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0013500000350177288,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_24_26_2",
       "ports": {
         "bus1": 24,
         "bus2": 26
       },
-      "id": "BR_24_26_2",
       "params": {
         "R": 0.016450000926852226,
         "X": 0.05347999930381775,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0013500000350177288,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_24_33_1",
       "ports": {
         "bus1": 24,
         "bus2": 33
       },
-      "id": "BR_24_33_1",
       "params": {
         "R": 0.016899999231100082,
         "X": 0.033190999180078506,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.011020000092685223,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_24_36_1",
       "ports": {
         "bus1": 24,
         "bus2": 36
       },
-      "id": "BR_24_36_1",
       "params": {
         "R": 0.018929999321699142,
         "X": 0.03755100071430206,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0019399999873712659,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_25_26_1",
       "ports": {
         "bus1": 25,
         "bus2": 26
       },
-      "id": "BR_25_26_1",
       "params": {
         "R": 0.005319999996572733,
         "X": 0.1472650021314621,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_25_26_2",
       "ports": {
         "bus1": 25,
         "bus2": 26
       },
-      "id": "BR_25_26_2",
       "params": {
         "R": 0.005319999996572733,
         "X": 0.1472650021314621,
-        "G": 0.0,
-        "B": 0.0
+        "tap": 1.0,
+        "phase": 0.0
+      },
+      "extension": {
+        "xfmr": true
       }
     },
     {
       "class": "Branch",
+      "id": "branch_25_35_1",
       "ports": {
         "bus1": 25,
         "bus2": 35
       },
-      "id": "BR_25_35_1",
       "params": {
         "R": 0.004129999782890081,
         "X": 0.02442000061273575,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.006850000005215406,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_25_35_2",
       "ports": {
         "bus1": 25,
         "bus2": 35
       },
-      "id": "BR_25_35_2",
       "params": {
         "R": 0.004129999782890081,
         "X": 0.02442000061273575,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.006850000005215406,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_25_37_1",
       "ports": {
         "bus1": 25,
         "bus2": 37
       },
-      "id": "BR_25_37_1",
       "params": {
         "R": 0.004889999981969595,
         "X": 0.026145000010728836,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.007799999788403511,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_25_37_2",
       "ports": {
         "bus1": 25,
         "bus2": 37
       },
-      "id": "BR_25_37_2",
       "params": {
         "R": 0.004889999981969595,
         "X": 0.026145000010728836,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.007799999788403511,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_27_29_1",
       "ports": {
         "bus1": 27,
         "bus2": 29
       },
-      "id": "BR_27_29_1",
       "params": {
         "R": 0.023879999294877052,
         "X": 0.04283199831843376,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0012799999676644802,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_28_30_1",
       "ports": {
         "bus1": 28,
         "bus2": 30
       },
-      "id": "BR_28_30_1",
       "params": {
         "R": 0.01119999960064888,
         "X": 0.03139600157737732,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0043299999088048935,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_28_30_2",
       "ports": {
         "bus1": 28,
         "bus2": 30
       },
-      "id": "BR_28_30_2",
       "params": {
         "R": 0.01119999960064888,
         "X": 0.03139600157737732,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0043299999088048935,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_28_31_1",
       "ports": {
         "bus1": 28,
         "bus2": 31
       },
-      "id": "BR_28_31_1",
       "params": {
         "R": 0.05107000097632408,
         "X": 0.10468299686908722,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.014349999837577343,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_29_30_1",
       "ports": {
         "bus1": 29,
         "bus2": 30
       },
-      "id": "BR_29_30_1",
       "params": {
         "R": 0.014790000393986702,
         "X": 0.03665599972009659,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.001879999996162951,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_29_32_1",
       "ports": {
         "bus1": 29,
         "bus2": 32
       },
-      "id": "BR_29_32_1",
       "params": {
         "R": 0.023150000721216202,
         "X": 0.06134700030088425,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0017300000181421638,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_31_33_1",
       "ports": {
         "bus1": 31,
         "bus2": 33
       },
-      "id": "BR_31_33_1",
       "params": {
         "R": 0.02696000039577484,
         "X": 0.05761199817061424,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.003329999977722764,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_33_34_1",
       "ports": {
         "bus1": 33,
         "bus2": 34
       },
-      "id": "BR_33_34_1",
       "params": {
         "R": 0.035280000418424606,
         "X": 0.08392699807882309,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0025599999353289604,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_33_34_2",
       "ports": {
         "bus1": 33,
         "bus2": 34
       },
-      "id": "BR_33_34_2",
       "params": {
         "R": 0.035280000418424606,
         "X": 0.08392699807882309,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.0025599999353289604,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
       "class": "Branch",
+      "id": "branch_35_37_1",
       "ports": {
         "bus1": 35,
         "bus2": 37
       },
-      "id": "BR_35_37_1",
       "params": {
         "R": 0.0015200000489130616,
         "X": 0.00837399996817112,
-        "G": 0.0,
-        "B": 0.0
+        "B": 0.008089999668300152,
+        "tap": 1.0,
+        "phase": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_2",
       "ports": {
         "bus": 2
       },
-      "id": "load_2_1",
       "params": {
-        "R": 1.618660693049334,
-        "X": 0.0
+        "Pnom": 0.6069999933242798,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_3",
       "ports": {
         "bus": 3
       },
-      "id": "load_3_1",
       "params": {
-        "R": 1.6321502625233628,
-        "X": 0.0
+        "Pnom": 0.5939000248908997,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_4",
       "ports": {
         "bus": 4
       },
-      "id": "load_4_1",
       "params": {
-        "R": 4.263681202202025,
-        "X": 0.0
+        "Pnom": 0.22470000386238098,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_6",
       "ports": {
         "bus": 6
       },
-      "id": "load_6_1",
       "params": {
-        "R": 3.5060671189526507,
-        "X": 0.0
+        "Pnom": 0.27459999918937683,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_7",
       "ports": {
         "bus": 7
       },
-      "id": "load_7_1",
       "params": {
-        "R": 2.5980607495574937,
-        "X": 0.0
+        "Pnom": 0.3700999915599823,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_8",
       "ports": {
         "bus": 8
       },
-      "id": "load_8_1",
       "params": {
-        "R": 1.4711128554291748,
-        "X": 0.0
+        "Pnom": 0.6510000228881836,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_10",
       "ports": {
         "bus": 10
       },
-      "id": "load_10_1",
       "params": {
-        "R": 2.548318723209129,
-        "X": 0.0
+        "Pnom": 0.3776000142097473,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_11",
       "ports": {
         "bus": 11
       },
-      "id": "load_11_1",
       "params": {
-        "R": 1.4499655743840383,
-        "X": 0.0
+        "Pnom": 0.6554999947547913,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_12",
       "ports": {
         "bus": 12
       },
-      "id": "load_12_1",
       "params": {
-        "R": 1.768502072552544,
-        "X": 0.0
+        "Pnom": 0.5400999784469604,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_13",
       "ports": {
         "bus": 13
       },
-      "id": "load_13_1",
       "params": {
-        "R": 1.6177396052971107,
-        "X": 0.0
+        "Pnom": 0.5924000144004822,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_15",
       "ports": {
         "bus": 15
       },
-      "id": "load_15_1",
       "params": {
-        "R": 1.5726089776036096,
-        "X": 0.0
+        "Pnom": 0.609000027179718,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_16",
       "ports": {
         "bus": 16
       },
-      "id": "load_16_1",
       "params": {
-        "R": 4.048219134497376,
-        "X": 0.0
+        "Pnom": 0.23829999566078186,
+        "Qnom": -0.3087009787559509,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_17",
       "ports": {
         "bus": 17
       },
-      "id": "load_17_1",
       "params": {
-        "R": 7.903586339441369,
-        "X": 0.0
+        "Pnom": 0.12039999663829803,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_18",
       "ports": {
         "bus": 18
       },
-      "id": "load_18_1",
       "params": {
-        "R": 2.6225185886916607,
-        "X": 0.0
+        "Pnom": 0.36320000886917114,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_19",
       "ports": {
         "bus": 19
       },
-      "id": "load_19_1",
       "params": {
-        "R": 2.021982769879237,
-        "X": 0.0
+        "Pnom": 0.4860000014305115,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_20",
       "ports": {
         "bus": 20
       },
-      "id": "load_20_1",
       "params": {
-        "R": 1.507971560913099,
-        "X": 0.0
+        "Pnom": 0.6495000123977661,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_21",
       "ports": {
         "bus": 21
       },
-      "id": "load_21_1",
       "params": {
-        "R": 1.986526071387391,
-        "X": 0.0
+        "Pnom": 0.48339998722076416,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_23",
       "ports": {
         "bus": 23
       },
-      "id": "load_23_1",
       "params": {
-        "R": 1.1527377426570342,
-        "X": 0.0
+        "Pnom": 0.8675000071525574,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_24",
       "ports": {
         "bus": 24
       },
-      "id": "load_24_1",
       "params": {
-        "R": 2.11860771063105,
-        "X": 0.0
+        "Pnom": 0.4657999873161316,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_26",
       "ports": {
         "bus": 26
       },
-      "id": "load_26_1",
       "params": {
-        "R": 1.3153999989678078,
-        "X": 0.0
+        "Pnom": 0.7527999877929688,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_27",
       "ports": {
         "bus": 27
       },
-      "id": "load_27_1",
       "params": {
-        "R": 25.489730543213334,
-        "X": 0.0
+        "Pnom": 0.039500001817941666,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_28",
       "ports": {
         "bus": 28
       },
-      "id": "load_28_1",
       "params": {
-        "R": 11.337868106832481,
-        "X": 0.0
+        "Pnom": 0.08820000290870667,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_29",
       "ports": {
         "bus": 29
       },
-      "id": "load_29_1",
       "params": {
-        "R": 12.86737691739248,
-        "X": 0.0
+        "Pnom": 0.07699999958276749,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_30",
       "ports": {
         "bus": 30
       },
-      "id": "load_30_1",
       "params": {
-        "R": 2.02246444967589,
-        "X": 0.0
+        "Pnom": 0.4902999997138977,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_31",
       "ports": {
         "bus": 31
       },
-      "id": "load_31_1",
       "params": {
-        "R": 10.295768232605727,
-        "X": 0.0
+        "Pnom": 0.09619999676942825,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_32",
       "ports": {
         "bus": 32
       },
-      "id": "load_32_1",
       "params": {
-        "R": 14.73029344367299,
-        "X": 0.0
+        "Pnom": 0.06669999659061432,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "LoadZIP",
+      "id": "load_33",
       "ports": {
         "bus": 33
       },
-      "id": "load_33_1",
       "params": {
-        "R": 1.702718886685346,
-        "X": 0.0
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 16
-      },
-      "id": "shunt_16_1",
-      "params": {
-        "R": 0.0,
-        "X": -3.1250000698491944
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 1
-      },
-      "id": "lineshunt_1_5_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -236.40661498817244
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 5
-      },
-      "id": "lineshunt_1_5_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -236.40661498817244
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 1
-      },
-      "id": "lineshunt_1_5_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -236.40661498817244
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 5
-      },
-      "id": "lineshunt_1_5_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -236.40661498817244
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 1
-      },
-      "id": "lineshunt_1_22_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -330.5785141879683
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 22
-      },
-      "id": "lineshunt_1_22_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -330.5785141879683
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 1
-      },
-      "id": "lineshunt_1_25_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -259.4033710857198
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 25
-      },
-      "id": "lineshunt_1_25_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -259.4033710857198
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 1
-      },
-      "id": "lineshunt_1_25_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -259.4033710857198
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 25
-      },
-      "id": "lineshunt_1_25_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -259.4033710857198
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 1
-      },
-      "id": "lineshunt_1_35_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -155.7632401031563
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 35
-      },
-      "id": "lineshunt_1_35_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -155.7632401031563
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 1
-      },
-      "id": "lineshunt_1_35_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -155.7632401031563
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 35
-      },
-      "id": "lineshunt_1_35_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -155.7632401031563
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_4_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -778.2101132571594
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 4
-      },
-      "id": "lineshunt_2_4_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -778.2101132571594
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_6_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -641.0256392805593
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_2_6_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -641.0256392805593
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_6_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -641.0256392805593
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_2_6_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -641.0256392805593
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_7_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -530.5039691448143
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 7
-      },
-      "id": "lineshunt_2_7_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -530.5039691448143
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_21_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1156.0693520383818
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 21
-      },
-      "id": "lineshunt_2_21_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1156.0693520383818
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_23_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1111.1111301974754
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_2_23_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1111.1111301974754
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_23_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -1111.1111301974754
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_2_23_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -1111.1111301974754
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_23_3_f",
-      "params": {
-        "R": 0.0,
-        "X": -1111.1111301974754
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_2_23_3_t",
-      "params": {
-        "R": 0.0,
-        "X": -1111.1111301974754
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_26_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1075.2688401616344
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 26
-      },
-      "id": "lineshunt_2_26_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1075.2688401616344
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 2
-      },
-      "id": "lineshunt_2_26_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -1075.2688401616344
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 26
-      },
-      "id": "lineshunt_2_26_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -1075.2688401616344
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 3
-      },
-      "id": "lineshunt_3_6_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1923.0769178416779
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_3_6_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1923.0769178416779
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 3
-      },
-      "id": "lineshunt_3_6_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -1923.0769178416779
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_3_6_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -1923.0769178416779
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 3
-      },
-      "id": "lineshunt_3_16_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -396.8253816435958
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 16
-      },
-      "id": "lineshunt_3_16_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -396.8253816435958
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 3
-      },
-      "id": "lineshunt_3_19_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -369.68575232312037
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_3_19_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -369.68575232312037
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 3
-      },
-      "id": "lineshunt_3_19_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -369.68575232312037
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_3_19_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -369.68575232312037
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 3
-      },
-      "id": "lineshunt_3_19_3_f",
-      "params": {
-        "R": 0.0,
-        "X": -369.68575232312037
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_3_19_3_t",
-      "params": {
-        "R": 0.0,
-        "X": -369.68575232312037
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 3
-      },
-      "id": "lineshunt_3_21_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1315.7894313425727
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 21
-      },
-      "id": "lineshunt_3_21_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1315.7894313425727
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 4
-      },
-      "id": "lineshunt_4_13_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1176.4705726380582
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 13
-      },
-      "id": "lineshunt_4_13_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1176.4705726380582
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 5
-      },
-      "id": "lineshunt_5_9_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -488.99756171093753
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 9
-      },
-      "id": "lineshunt_5_9_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -488.99756171093753
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 5
-      },
-      "id": "lineshunt_5_14_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -291.1208084638919
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 14
-      },
-      "id": "lineshunt_5_14_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -291.1208084638919
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_6_11_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -2061.8556835250656
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 11
-      },
-      "id": "lineshunt_6_11_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -2061.8556835250656
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_6_12_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -3030.3029398219232
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 12
-      },
-      "id": "lineshunt_6_12_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -3030.3029398219232
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_6_12_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -3030.3029398219232
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 12
-      },
-      "id": "lineshunt_6_12_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -3030.3029398219232
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 7
-      },
-      "id": "lineshunt_7_6_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_7_6_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 7
-      },
-      "id": "lineshunt_7_6_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_7_6_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 7
-      },
-      "id": "lineshunt_7_6_3_f",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 6
-      },
-      "id": "lineshunt_7_6_3_t",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 7
-      },
-      "id": "lineshunt_7_10_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 10
-      },
-      "id": "lineshunt_7_10_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 7
-      },
-      "id": "lineshunt_7_13_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 13
-      },
-      "id": "lineshunt_7_13_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 7
-      },
-      "id": "lineshunt_7_13_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 13
-      },
-      "id": "lineshunt_7_13_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 7
-      },
-      "id": "lineshunt_7_13_3_f",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 13
-      },
-      "id": "lineshunt_7_13_3_t",
-      "params": {
-        "R": 0.0,
-        "X": -2083.3333859627614
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 8
-      },
-      "id": "lineshunt_8_15_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1015.2283751754799
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 15
-      },
-      "id": "lineshunt_8_15_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1015.2283751754799
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 8
-      },
-      "id": "lineshunt_8_19_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -813.0080953129111
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_8_19_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -813.0080953129111
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 8
-      },
-      "id": "lineshunt_8_19_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -813.0080953129111
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_8_19_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -813.0080953129111
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 9
-      },
-      "id": "lineshunt_9_14_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -196.65684012954634
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 14
-      },
-      "id": "lineshunt_9_14_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -196.65684012954634
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 11
-      },
-      "id": "lineshunt_11_13_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -892.8571190098212
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 13
-      },
-      "id": "lineshunt_11_13_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -892.8571190098212
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 11
-      },
-      "id": "lineshunt_11_15_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1315.7894313425727
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 15
-      },
-      "id": "lineshunt_11_15_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1315.7894313425727
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 12
-      },
-      "id": "lineshunt_12_15_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -483.0918038886543
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 15
-      },
-      "id": "lineshunt_12_15_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -483.0918038886543
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 12
-      },
-      "id": "lineshunt_12_17_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -709.2198449645173
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 17
-      },
-      "id": "lineshunt_12_17_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -709.2198449645173
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 13
-      },
-      "id": "lineshunt_13_16_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1818.1818280338257
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 16
-      },
-      "id": "lineshunt_13_16_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1818.1818280338257
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 16
-      },
-      "id": "lineshunt_16_18_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1047.1204233616904
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 18
-      },
-      "id": "lineshunt_16_18_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1047.1204233616904
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 17
-      },
-      "id": "lineshunt_17_18_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1379.3103623687869
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 18
-      },
-      "id": "lineshunt_17_18_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1379.3103623687869
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_19_23_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1503.7593994649972
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_19_23_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1503.7593994649972
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_19_23_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -1503.7593994649972
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_19_23_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -1503.7593994649972
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_19_23_3_f",
-      "params": {
-        "R": 0.0,
-        "X": -1503.7593994649972
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_19_23_3_t",
-      "params": {
-        "R": 0.0,
-        "X": -1503.7593994649972
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 19
-      },
-      "id": "lineshunt_19_23_4_f",
-      "params": {
-        "R": 0.0,
-        "X": -1503.7593994649972
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_19_23_4_t",
-      "params": {
-        "R": 0.0,
-        "X": -1503.7593994649972
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 20
-      },
-      "id": "lineshunt_20_23_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1117.318429917619
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_20_23_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1117.318429917619
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 20
-      },
-      "id": "lineshunt_20_30_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -666.6666608717707
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 30
-      },
-      "id": "lineshunt_20_30_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -666.6666608717707
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 20
-      },
-      "id": "lineshunt_20_32_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -597.0149436966835
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 32
-      },
-      "id": "lineshunt_20_32_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -597.0149436966835
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 22
-      },
-      "id": "lineshunt_22_25_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -258.06452034663465
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 25
-      },
-      "id": "lineshunt_22_25_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -258.06452034663465
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 22
-      },
-      "id": "lineshunt_22_37_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -181.1594162699688
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 37
-      },
-      "id": "lineshunt_22_37_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -181.1594162699688
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_23_34_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1036.2694152102588
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 34
-      },
-      "id": "lineshunt_23_34_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1036.2694152102588
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "lineshunt_23_34_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -1036.2694152102588
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 34
-      },
-      "id": "lineshunt_23_34_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -1036.2694152102588
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 24
-      },
-      "id": "lineshunt_24_26_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1481.4814430532479
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 26
-      },
-      "id": "lineshunt_24_26_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1481.4814430532479
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 24
-      },
-      "id": "lineshunt_24_26_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -1481.4814430532479
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 26
-      },
-      "id": "lineshunt_24_26_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -1481.4814430532479
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 24
-      },
-      "id": "lineshunt_24_33_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -181.48820174035623
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 33
-      },
-      "id": "lineshunt_24_33_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -181.48820174035623
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 24
-      },
-      "id": "lineshunt_24_36_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1030.9278417625328
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 36
-      },
-      "id": "lineshunt_24_36_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1030.9278417625328
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 25
-      },
-      "id": "lineshunt_25_35_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -291.9708026974093
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 35
-      },
-      "id": "lineshunt_25_35_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -291.9708026974093
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 25
-      },
-      "id": "lineshunt_25_35_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -291.9708026974093
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 35
-      },
-      "id": "lineshunt_25_35_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -291.9708026974093
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 25
-      },
-      "id": "lineshunt_25_37_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -256.4102633660912
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 37
-      },
-      "id": "lineshunt_25_37_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -256.4102633660912
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 25
-      },
-      "id": "lineshunt_25_37_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -256.4102633660912
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 37
-      },
-      "id": "lineshunt_25_37_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -256.4102633660912
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 27
-      },
-      "id": "lineshunt_27_29_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1562.500039472071
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 29
-      },
-      "id": "lineshunt_27_29_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1562.500039472071
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 28
-      },
-      "id": "lineshunt_28_30_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -461.8937741622291
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 30
-      },
-      "id": "lineshunt_28_30_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -461.8937741622291
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 28
-      },
-      "id": "lineshunt_28_30_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -461.8937741622291
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 30
-      },
-      "id": "lineshunt_28_30_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -461.8937741622291
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 28
-      },
-      "id": "lineshunt_28_31_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -139.37282387716408
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 31
-      },
-      "id": "lineshunt_28_31_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -139.37282387716408
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 29
-      },
-      "id": "lineshunt_29_30_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1063.8297894053017
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 30
-      },
-      "id": "lineshunt_29_30_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1063.8297894053017
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 29
-      },
-      "id": "lineshunt_29_32_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -1156.0693520383818
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 32
-      },
-      "id": "lineshunt_29_32_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -1156.0693520383818
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 31
-      },
-      "id": "lineshunt_31_33_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -600.6006046185349
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 33
-      },
-      "id": "lineshunt_31_33_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -600.6006046185349
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 33
-      },
-      "id": "lineshunt_33_34_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -781.2500197360355
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 34
-      },
-      "id": "lineshunt_33_34_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -781.2500197360355
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 33
-      },
-      "id": "lineshunt_33_34_2_f",
-      "params": {
-        "R": 0.0,
-        "X": -781.2500197360355
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 34
-      },
-      "id": "lineshunt_33_34_2_t",
-      "params": {
-        "R": 0.0,
-        "X": -781.2500197360355
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 35
-      },
-      "id": "lineshunt_35_37_1_f",
-      "params": {
-        "R": 0.0,
-        "X": -247.2187987642074
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 37
-      },
-      "id": "lineshunt_35_37_1_t",
-      "params": {
-        "R": 0.0,
-        "X": -247.2187987642074
+        "Pnom": 0.5821999907493591,
+        "Qnom": 0.0,
+        "alphaI": 0.0,
+        "alphaP": 0.0
       }
     },
     {
       "class": "Genrou",
-      "ports": {
-        "bus": 2,
-        "speed": 1,
-        "efd": 2
-      },
       "id": "2_1_genrou",
+      "ports": {
+        "bus": 2,
+        "pmech": 0,
+        "efd": 1,
+        "speed": 2
+      },
       "params": {
         "p0": 0.02500000037252903,
         "q0": 0.00800000037997961,
@@ -4312,20 +3054,34 @@
         "S10": 0.17000000178813934,
         "S12": 0.5699999928474426,
         "mva": 2.799999952316284
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "2_1_tgov1",
+      "ports": {
+        "speed": 2,
+        "pmech": 0
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 2.799999952316284,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.892857171367018,
+        "Pvmin": 0.3571428552421988,
+        "Dt": 0.0
+      }
     },
     {
       "class": "Ieeet1",
-      "ports": {
-        "bus": 2,
-        "speed": 1,
-        "efd": 2
-      },
       "id": "2_1_ieeet1",
+      "ports": {
+        "bus": 2,
+        "speed": 2,
+        "efd": 1
+      },
       "params": {
         "Tr": 0.0,
         "Ka": 24.790000915527344,
@@ -4345,12 +3101,13 @@
     },
     {
       "class": "Genrou",
-      "ports": {
-        "bus": 2,
-        "speed": 3,
-        "efd": 4
-      },
       "id": "2_2_genrou",
+      "ports": {
+        "bus": 2,
+        "pmech": 3,
+        "efd": 4,
+        "speed": 5
+      },
       "params": {
         "p0": 0.02500000037252903,
         "q0": 0.00800000037997961,
@@ -4371,20 +3128,34 @@
         "S10": 0.17000000178813934,
         "S12": 0.5699999928474426,
         "mva": 2.799999952316284
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "2_2_tgov1",
+      "ports": {
+        "speed": 5,
+        "pmech": 3
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 2.799999952316284,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.892857171367018,
+        "Pvmin": 0.3571428552421988,
+        "Dt": 0.0
+      }
     },
     {
       "class": "Ieeet1",
+      "id": "2_2_ieeet1",
       "ports": {
         "bus": 2,
-        "speed": 3,
+        "speed": 5,
         "efd": 4
       },
-      "id": "2_2_ieeet1",
       "params": {
         "Tr": 0.0,
         "Ka": 24.790000915527344,
@@ -4404,12 +3175,13 @@
     },
     {
       "class": "Genrou",
-      "ports": {
-        "bus": 2,
-        "speed": 5,
-        "efd": 6
-      },
       "id": "2_3_genrou",
+      "ports": {
+        "bus": 2,
+        "pmech": 6,
+        "efd": 7,
+        "speed": 8
+      },
       "params": {
         "p0": 0.02500000037252903,
         "q0": 0.00800000037997961,
@@ -4430,20 +3202,34 @@
         "S10": 0.17000000178813934,
         "S12": 0.5699999928474426,
         "mva": 2.799999952316284
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "2_3_tgov1",
+      "ports": {
+        "speed": 8,
+        "pmech": 6
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 2.799999952316284,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.892857171367018,
+        "Pvmin": 0.3571428552421988,
+        "Dt": 0.0
+      }
     },
     {
       "class": "Ieeet1",
-      "ports": {
-        "bus": 2,
-        "speed": 5,
-        "efd": 6
-      },
       "id": "2_3_ieeet1",
+      "ports": {
+        "bus": 2,
+        "speed": 8,
+        "efd": 7
+      },
       "params": {
         "Tr": 0.0,
         "Ka": 24.790000915527344,
@@ -4463,142 +3249,87 @@
     },
     {
       "class": "Genrou",
-      "ports": {
-        "bus": 2,
-        "speed": 7,
-        "efd": 8
-      },
       "id": "2_4_genrou",
-      "params": {
-        "p0": 0.02500000037252903,
-        "q0": 0.00800000037997961,
-        "H": 3.690000057220459,
-        "D": 0.0,
-        "Ra": 0.0,
-        "Tdop": 7.619999885559082,
-        "Tdopp": 0.05999999865889549,
-        "Tqop": 1.309999942779541,
-        "Tqopp": 0.03999999910593033,
-        "Xd": 1.5499999523162842,
-        "Xdp": 0.15000000596046448,
-        "Xdpp": 0.15000000596046448,
-        "Xq": 1.5199999809265137,
-        "Xqp": 0.47999998927116394,
-        "Xqpp": 0.15000000596046448,
-        "Xl": 0.11999999731779099,
-        "S10": 0.17000000178813934,
-        "S12": 0.5699999928474426,
-        "mva": 2.799999952316284
-      },
-      "mon": [
-        "delta",
-        "omega"
-      ]
-    },
-    {
-      "class": "Ieeet1",
       "ports": {
         "bus": 2,
-        "speed": 7,
-        "efd": 8
-      },
-      "id": "2_4_ieeet1",
-      "params": {
-        "Tr": 0.0,
-        "Ka": 24.790000915527344,
-        "Ta": 0.019999999552965164,
-        "Ke": 1.0,
-        "Te": 0.7200000286102295,
-        "Kf": 0.09000000357627869,
-        "Tf": 1.2000000476837158,
-        "Vrmin": -100.0,
-        "Vrmax": 100.0,
-        "E1": 2.799999952316284,
-        "E2": 3.7300000190734863,
-        "Se1": 0.03999999910593033,
-        "Se2": 0.33000001311302185,
-        "Ispdlim": 0.0
-      }
-    },
-    {
-      "class": "Genrou",
-      "ports": {
-        "bus": 23,
-        "speed": 9
-      },
-      "id": "23_1_genrou",
-      "params": {
-        "p0": 0.6927474141120911,
-        "q0": 0.00044080009683966637,
-        "H": 6.150000095367432,
-        "D": 0.0,
-        "Ra": 0.0,
-        "Tdop": 9.229999542236328,
-        "Tdopp": 0.029999999329447746,
-        "Tqop": 0.5400000214576721,
-        "Tqopp": 0.05999999865889549,
-        "Xd": 1.600000023841858,
-        "Xdp": 0.3199999928474426,
-        "Xdpp": 0.3199999928474426,
-        "Xq": 1.559999942779541,
-        "Xqp": 0.5899999737739563,
-        "Xqpp": 0.3199999928474426,
-        "Xl": 0.25,
-        "S10": 0.12999999523162842,
-        "S12": 0.49000000953674316,
-        "mva": 85.5999984741211
-      },
-      "mon": [
-        "delta",
-        "omega"
-      ]
-    },
-    {
-      "class": "Ieeest",
-      "ports": {
-        "input": 9,
-        "output": 10
-      },
-      "id": "23_1_ieeest",
-      "params": {
-        "A1": 0.0,
-        "A2": 0.0,
-        "A3": 0.0,
-        "A4": 0.0,
-        "A5": 0.0,
-        "A6": 0.0,
-        "T1": 0.30000001192092896,
-        "T2": 0.6000000238418579,
-        "T3": 0.699999988079071,
-        "T4": 1.0,
-        "T5": 0.10000000149011612,
-        "T6": 0.10000000149011612,
-        "Ks": 10.0,
-        "Lsmin": -0.10000000149011612,
-        "Lsmax": 0.10000000149011612,
-        "Vcl": 0.0,
-        "Vcu": 0.0,
-        "Tdelay": 0.0
-      }
-    },
-    {
-      "class": "LoadZ",
-      "ports": {
-        "bus": 23
-      },
-      "id": "static_gen_23_10",
-      "params": {
-        "R": -2.55558484232555,
-        "X": -0.0028788752068698927
-      }
-    },
-    {
-      "class": "Genrou",
-      "ports": {
-        "bus": 23,
+        "pmech": 9,
+        "efd": 10,
         "speed": 11
       },
-      "id": "23_2_genrou",
+      "params": {
+        "p0": 0.02500000037252903,
+        "q0": 0.00800000037997961,
+        "H": 3.690000057220459,
+        "D": 0.0,
+        "Ra": 0.0,
+        "Tdop": 7.619999885559082,
+        "Tdopp": 0.05999999865889549,
+        "Tqop": 1.309999942779541,
+        "Tqopp": 0.03999999910593033,
+        "Xd": 1.5499999523162842,
+        "Xdp": 0.15000000596046448,
+        "Xdpp": 0.15000000596046448,
+        "Xq": 1.5199999809265137,
+        "Xqp": 0.47999998927116394,
+        "Xqpp": 0.15000000596046448,
+        "Xl": 0.11999999731779099,
+        "S10": 0.17000000178813934,
+        "S12": 0.5699999928474426,
+        "mva": 2.799999952316284
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "2_4_tgov1",
+      "ports": {
+        "speed": 11,
+        "pmech": 9
+      },
+      "params": {
+        "Trate": 2.799999952316284,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.892857171367018,
+        "Pvmin": 0.3571428552421988,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "2_4_ieeet1",
+      "ports": {
+        "bus": 2,
+        "speed": 11,
+        "efd": 10
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 24.790000915527344,
+        "Ta": 0.019999999552965164,
+        "Ke": 1.0,
+        "Te": 0.7200000286102295,
+        "Kf": 0.09000000357627869,
+        "Tf": 1.2000000476837158,
+        "Vrmin": -100.0,
+        "Vrmax": 100.0,
+        "E1": 2.799999952316284,
+        "E2": 3.7300000190734863,
+        "Se1": 0.03999999910593033,
+        "Se2": 0.33000001311302185,
+        "Ispdlim": 0.0
+      }
+    },
+    {
+      "class": "Genrou",
+      "id": "23_1_genrou",
+      "ports": {
+        "bus": 23,
+        "pmech": 12,
+        "efd": 13,
+        "speed": 14
+      },
       "params": {
         "p0": 0.6927474141120911,
         "q0": 0.00044080009683966637,
@@ -4619,19 +3350,237 @@
         "S10": 0.12999999523162842,
         "S12": 0.49000000953674316,
         "mva": 85.5999984741211
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "23_1_tgov1",
+      "ports": {
+        "speed": 14,
+        "pmech": 12
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 85.5999984741211,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9088785871635613,
+        "Pvmin": 0.23364486745954438,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "23_1_ieeet1",
+      "ports": {
+        "bus": 23,
+        "speed": 14,
+        "vs": 15,
+        "efd": 13
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
+      "id": "23_1_ieeest",
       "ports": {
-        "input": 11,
-        "output": 12
+        "input": 14,
+        "output": 15
       },
+      "params": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "A3": 0.0,
+        "A4": 0.0,
+        "A5": 0.0,
+        "A6": 0.0,
+        "T1": 0.30000001192092896,
+        "T2": 0.6000000238418579,
+        "T3": 0.699999988079071,
+        "T4": 1.0,
+        "T5": 0.10000000149011612,
+        "T6": 0.10000000149011612,
+        "Ks": 10.0,
+        "Lsmin": -0.10000000149011612,
+        "Lsmax": 0.10000000149011612,
+        "Vcl": 0.0,
+        "Vcu": 0.0,
+        "Tdelay": 0.0
+      }
+    },
+    {
+      "class": "Regca",
+      "id": "23_10_regca",
+      "ports": {
+        "bus": 23,
+        "ibranchr": 16,
+        "ibranchi": 17,
+        "pbranch": 18,
+        "qbranch": 19
+      },
+      "params": {
+        "p0": 0.39129936695098877,
+        "q0": 0.00044080009683966637,
+        "mva": 50.5,
+        "Tg": 0.017100000753998756,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
+      }
+    },
+    {
+      "class": "Repca",
+      "id": "23_10_repca",
+      "ports": {
+        "bus": 23,
+        "ir": 16,
+        "ii": 17,
+        "p": 18,
+        "q": 19
+      },
+      "params": {
+        "mva": 50.5,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 1.0399999618530273,
+        "Ki": 3.7300000190734863,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 1.899999976158142,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
+      }
+    },
+    {
+      "class": "Genrou",
+      "id": "23_2_genrou",
+      "ports": {
+        "bus": 23,
+        "pmech": 20,
+        "efd": 21,
+        "speed": 22
+      },
+      "params": {
+        "p0": 0.6927474141120911,
+        "q0": 0.00044080009683966637,
+        "H": 6.150000095367432,
+        "D": 0.0,
+        "Ra": 0.0,
+        "Tdop": 9.229999542236328,
+        "Tdopp": 0.029999999329447746,
+        "Tqop": 0.5400000214576721,
+        "Tqopp": 0.05999999865889549,
+        "Xd": 1.600000023841858,
+        "Xdp": 0.3199999928474426,
+        "Xdpp": 0.3199999928474426,
+        "Xq": 1.559999942779541,
+        "Xqp": 0.5899999737739563,
+        "Xqpp": 0.3199999928474426,
+        "Xl": 0.25,
+        "S10": 0.12999999523162842,
+        "S12": 0.49000000953674316,
+        "mva": 85.5999984741211
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "23_2_tgov1",
+      "ports": {
+        "speed": 22,
+        "pmech": 20
+      },
+      "params": {
+        "Trate": 85.5999984741211,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9088785871635613,
+        "Pvmin": 0.23364486745954438,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "23_2_ieeet1",
+      "ports": {
+        "bus": 23,
+        "speed": 22,
+        "vs": 23,
+        "efd": 21
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
+    },
+    {
+      "class": "Ieeest",
       "id": "23_2_ieeest",
+      "ports": {
+        "input": 22,
+        "output": 23
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -4655,11 +3604,13 @@
     },
     {
       "class": "Genrou",
+      "id": "23_3_genrou",
       "ports": {
         "bus": 23,
-        "speed": 13
+        "pmech": 24,
+        "efd": 25,
+        "speed": 26
       },
-      "id": "23_3_genrou",
       "params": {
         "p0": 0.47637367248535156,
         "q0": 0.00044080009683966637,
@@ -4680,19 +3631,59 @@
         "S10": 0.12999999523162842,
         "S12": 0.49000000953674316,
         "mva": 57.099998474121094
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "23_3_tgov1",
+      "ports": {
+        "speed": 26,
+        "pmech": 24
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 57.099998474121094,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9089317122072053,
+        "Pvmin": 0.40280211964728146,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "23_3_ieeet1",
+      "ports": {
+        "bus": 23,
+        "speed": 26,
+        "vs": 27,
+        "efd": 25
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 13,
-        "output": 14
-      },
       "id": "23_3_ieeest",
+      "ports": {
+        "input": 26,
+        "output": 27
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -4716,11 +3707,13 @@
     },
     {
       "class": "Genrou",
+      "id": "23_4_genrou",
       "ports": {
         "bus": 23,
-        "speed": 15
+        "pmech": 28,
+        "efd": 29,
+        "speed": 30
       },
-      "id": "23_4_genrou",
       "params": {
         "p0": 0.47109630703926086,
         "q0": 0.00044080009683966637,
@@ -4741,19 +3734,59 @@
         "S10": 0.12999999523162842,
         "S12": 0.49000000953674316,
         "mva": 57.0
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "23_4_tgov1",
+      "ports": {
+        "speed": 30,
+        "pmech": 28
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 57.0,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9087719415363512,
+        "Pvmin": 0.35087719821093377,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "23_4_ieeet1",
+      "ports": {
+        "bus": 23,
+        "speed": 30,
+        "vs": 31,
+        "efd": 29
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 15,
-        "output": 16
-      },
       "id": "23_4_ieeest",
+      "ports": {
+        "input": 30,
+        "output": 31
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -4777,11 +3810,13 @@
     },
     {
       "class": "Genrou",
-      "ports": {
-        "bus": 23,
-        "speed": 17
-      },
       "id": "23_5_genrou",
+      "ports": {
+        "bus": 23,
+        "pmech": 32,
+        "efd": 33,
+        "speed": 34
+      },
       "params": {
         "p0": 0.445331871509552,
         "q0": 0.00044080009683966637,
@@ -4802,19 +3837,59 @@
         "S10": 0.12999999523162842,
         "S12": 0.49000000953674316,
         "mva": 56.29999923706055
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "23_5_tgov1",
+      "ports": {
+        "speed": 34,
+        "pmech": 32
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 56.29999923706055,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9094139098702888,
+        "Pvmin": 0.10657193511896063,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "23_5_ieeet1",
+      "ports": {
+        "bus": 23,
+        "speed": 34,
+        "vs": 35,
+        "efd": 33
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 17,
-        "output": 18
-      },
       "id": "23_5_ieeest",
+      "ports": {
+        "input": 34,
+        "output": 35
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -4838,11 +3913,13 @@
     },
     {
       "class": "Genrou",
+      "id": "23_6_genrou",
       "ports": {
         "bus": 23,
-        "speed": 19
+        "pmech": 36,
+        "efd": 37,
+        "speed": 38
       },
-      "id": "23_6_genrou",
       "params": {
         "p0": 0.445331871509552,
         "q0": 0.00044080009683966637,
@@ -4863,19 +3940,59 @@
         "S10": 0.12999999523162842,
         "S12": 0.49000000953674316,
         "mva": 56.29999923706055
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "23_6_tgov1",
+      "ports": {
+        "speed": 38,
+        "pmech": 36
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 56.29999923706055,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9094139098702888,
+        "Pvmin": 0.10657193511896063,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "23_6_ieeet1",
+      "ports": {
+        "bus": 23,
+        "speed": 38,
+        "vs": 39,
+        "efd": 37
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 19,
-        "output": 20
-      },
       "id": "23_6_ieeest",
+      "ports": {
+        "input": 38,
+        "output": 39
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -4899,11 +4016,13 @@
     },
     {
       "class": "Genrou",
+      "id": "23_7_genrou",
       "ports": {
         "bus": 23,
-        "speed": 21
+        "pmech": 40,
+        "efd": 41,
+        "speed": 42
       },
-      "id": "23_7_genrou",
       "params": {
         "p0": 0.4361436367034912,
         "q0": 0.00044080009683966637,
@@ -4924,19 +4043,59 @@
         "S10": 0.12999999523162842,
         "S12": 0.49000000953674316,
         "mva": 52.5
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "23_7_tgov1",
+      "ports": {
+        "speed": 42,
+        "pmech": 40
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 52.5,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9085714249383836,
+        "Pvmin": 0.38095238662901376,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "23_7_ieeet1",
+      "ports": {
+        "bus": 23,
+        "speed": 42,
+        "vs": 43,
+        "efd": 41
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 21,
-        "output": 22
-      },
       "id": "23_7_ieeest",
+      "ports": {
+        "input": 42,
+        "output": 43
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -4960,11 +4119,13 @@
     },
     {
       "class": "Genrou",
+      "id": "23_8_genrou",
       "ports": {
         "bus": 23,
-        "speed": 23
+        "pmech": 44,
+        "efd": 45,
+        "speed": 46
       },
-      "id": "23_8_genrou",
       "params": {
         "p0": 0.4318811297416687,
         "q0": 0.00044080009683966637,
@@ -4985,19 +4146,59 @@
         "S10": 0.12999999523162842,
         "S12": 0.49000000953674316,
         "mva": 51.900001525878906
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "23_8_tgov1",
+      "ports": {
+        "speed": 46,
+        "pmech": 44
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 51.900001525878906,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9094412119153205,
+        "Pvmin": 0.38535644913325523,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "23_8_ieeet1",
+      "ports": {
+        "bus": 23,
+        "speed": 46,
+        "vs": 47,
+        "efd": 45
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 23,
-        "output": 24
-      },
       "id": "23_8_ieeest",
+      "ports": {
+        "input": 46,
+        "output": 47
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -5020,100 +4221,614 @@
       }
     },
     {
-      "class": "LoadZ",
+      "class": "Regca",
+      "id": "23_9_regca",
       "ports": {
-        "bus": 23
+        "bus": 23,
+        "ibranchr": 48,
+        "ibranchi": 49,
+        "pbranch": 50,
+        "qbranch": 51
       },
-      "id": "static_gen_23_9",
       "params": {
-        "R": -7.979593913361971,
-        "X": -0.028067816934481765
+        "p0": 0.12531810998916626,
+        "q0": 0.00044080009683966637,
+        "mva": 16.200000762939453,
+        "Tg": 0.019899999722838402,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "Repca",
+      "id": "23_9_repca",
       "ports": {
-        "bus": 26
+        "bus": 23,
+        "ir": 48,
+        "ii": 49,
+        "p": 50,
+        "q": 51
       },
-      "id": "static_gen_26_1",
       "params": {
-        "R": -4.542353644504517,
-        "X": -1.362706042586598
+        "mva": 16.200000762939453,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 3.4100000858306885,
+        "Ki": 4.190000057220459,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 2.1500000953674316,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "Regca",
+      "id": "26_1_regca",
       "ports": {
-        "bus": 26
+        "bus": 26,
+        "ibranchr": 52,
+        "ibranchi": 53,
+        "pbranch": 54,
+        "qbranch": 55
       },
-      "id": "static_gen_26_2",
       "params": {
-        "R": -8.887266024759054,
-        "X": -2.701031837418629
+        "p0": 0.20000000298023224,
+        "q0": 0.05999999865889549,
+        "mva": 22.0,
+        "Tg": 0.019300000742077827,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "Repca",
+      "id": "26_1_repca",
       "ports": {
-        "bus": 27
+        "bus": 26,
+        "ir": 52,
+        "ii": 53,
+        "p": 54,
+        "q": 55
       },
-      "id": "static_gen_27_1",
       "params": {
-        "R": -3.2508212697252605,
-        "X": 0.5851478204770453
+        "mva": 22.0,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 4.829999923706055,
+        "Ki": 1.8700000047683716,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 3.309999942779541,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "Regca",
+      "id": "26_2_regca",
       "ports": {
-        "bus": 27
+        "bus": 26,
+        "ibranchr": 56,
+        "ibranchi": 57,
+        "pbranch": 58,
+        "qbranch": 59
       },
-      "id": "static_gen_27_2",
       "params": {
-        "R": -3.5320690099588394,
-        "X": 0.6398675998321443
+        "p0": 0.10199999809265137,
+        "q0": 0.03099999949336052,
+        "mva": 11.199999809265137,
+        "Tg": 0.018799999728798866,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "Repca",
+      "id": "26_2_repca",
       "ports": {
-        "bus": 28
+        "bus": 26,
+        "ir": 56,
+        "ii": 57,
+        "p": 58,
+        "q": 59
       },
-      "id": "static_gen_28_1",
       "params": {
-        "R": -2.1299167741588034,
-        "X": 0.25240431125491364
+        "mva": 11.199999809265137,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 3.609999895095825,
+        "Ki": 3.4800000190734863,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 5.840000152587891,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "Regca",
+      "id": "27_1_regca",
       "ports": {
-        "bus": 28
+        "bus": 27,
+        "ibranchr": 60,
+        "ibranchi": 61,
+        "pbranch": 62,
+        "qbranch": 63
       },
-      "id": "static_gen_28_2",
       "params": {
-        "R": -1.4401689970316678,
-        "X": 0.11451948382979044
+        "p0": 0.30000001192092896,
+        "q0": -0.05400000140070915,
+        "mva": 33.0,
+        "Tg": 0.017899999395012856,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
       }
     },
     {
-      "class": "LoadZ",
+      "class": "Repca",
+      "id": "27_1_repca",
       "ports": {
-        "bus": 33
+        "bus": 27,
+        "ir": 60,
+        "ii": 61,
+        "p": 62,
+        "q": 63
       },
-      "id": "static_gen_33_1",
       "params": {
-        "R": -3.293867855123091,
-        "X": -0.9905472044149161
+        "mva": 33.0,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 4.199999809265137,
+        "Ki": 1.559999942779541,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 5.570000171661377,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
+      }
+    },
+    {
+      "class": "Regca",
+      "id": "27_2_regca",
+      "ports": {
+        "bus": 27,
+        "ibranchr": 64,
+        "ibranchi": 65,
+        "pbranch": 66,
+        "qbranch": 67
+      },
+      "params": {
+        "p0": 0.2759999930858612,
+        "q0": -0.05000000074505806,
+        "mva": 30.399999618530273,
+        "Tg": 0.017999999225139618,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
+      }
+    },
+    {
+      "class": "Repca",
+      "id": "27_2_repca",
+      "ports": {
+        "bus": 27,
+        "ir": 64,
+        "ii": 65,
+        "p": 66,
+        "q": 67
+      },
+      "params": {
+        "mva": 30.399999618530273,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 3.9700000286102295,
+        "Ki": 3.740000009536743,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 1.5299999713897705,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
+      }
+    },
+    {
+      "class": "Regca",
+      "id": "28_1_regca",
+      "ports": {
+        "bus": 28,
+        "ibranchr": 68,
+        "ibranchi": 69,
+        "pbranch": 70,
+        "qbranch": 71
+      },
+      "params": {
+        "p0": 0.4629998803138733,
+        "q0": -0.05486747995018959,
+        "mva": 53.900001525878906,
+        "Tg": 0.01899999938905239,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
+      }
+    },
+    {
+      "class": "Repca",
+      "id": "28_1_repca",
+      "ports": {
+        "bus": 28,
+        "ir": 68,
+        "ii": 69,
+        "p": 70,
+        "q": 71
+      },
+      "params": {
+        "mva": 53.900001525878906,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 2.259999990463257,
+        "Ki": 1.309999942779541,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 6.230000019073486,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
+      }
+    },
+    {
+      "class": "Regca",
+      "id": "28_2_regca",
+      "ports": {
+        "bus": 28,
+        "ibranchr": 72,
+        "ibranchi": 73,
+        "pbranch": 74,
+        "qbranch": 75
+      },
+      "params": {
+        "p0": 0.6899999976158142,
+        "q0": -0.05486747995018959,
+        "mva": 75.9000015258789,
+        "Tg": 0.017999999225139618,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
+      }
+    },
+    {
+      "class": "Repca",
+      "id": "28_2_repca",
+      "ports": {
+        "bus": 28,
+        "ir": 72,
+        "ii": 73,
+        "p": 74,
+        "q": 75
+      },
+      "params": {
+        "mva": 75.9000015258789,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 4.869999885559082,
+        "Ki": 1.059999942779541,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 6.019999980926514,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
+      }
+    },
+    {
+      "class": "Regca",
+      "id": "33_1_regca",
+      "ports": {
+        "bus": 33,
+        "ibranchr": 76,
+        "ibranchi": 77,
+        "pbranch": 78,
+        "qbranch": 79
+      },
+      "params": {
+        "p0": 0.2759999930858612,
+        "q0": 0.08299999684095383,
+        "mva": 30.399999618530273,
+        "Tg": 0.019300000742077827,
+        "TM": 0.019999999552965164,
+        "Rqmax": 0.0,
+        "Rqmin": 0.0,
+        "Rpmax": 10.0,
+        "sL": true,
+        "IL1": 1.2200000286102295,
+        "VL0": 0.5,
+        "VL1": 0.8999999761581421,
+        "VA0": 0.4000000059604645,
+        "VA1": 0.800000011920929,
+        "Vhvmax": 1.2000000476837158,
+        "Qmin": -1.2999999523162842,
+        "Khv": 0.699999988079071,
+        "Xe": 0.0
+      }
+    },
+    {
+      "class": "Repca",
+      "id": "33_1_repca",
+      "ports": {
+        "bus": 33,
+        "ir": 76,
+        "ii": 77,
+        "p": 78,
+        "q": 79
+      },
+      "params": {
+        "mva": 30.399999618530273,
+        "VcompFlag": true,
+        "RefFlag": true,
+        "Freqflag": false,
+        "Tfltr": 0.0,
+        "Vfrz": 0.699999988079071,
+        "Rc": 0.0,
+        "Xc": 0.0,
+        "Kc": 1.0,
+        "dbdlow": -0.0,
+        "dbdupper": 0.0,
+        "emax": 1.0,
+        "emin": -1.0,
+        "Kp": 2.240000009536743,
+        "Ki": 2.380000114440918,
+        "Qmax": 1.0,
+        "Qmin": -1.0,
+        "Tft": 0.0,
+        "Tfv": 3.0299999713897705,
+        "Tp": 0.0,
+        "fdbd1": 0.0,
+        "fdbd2": 0.0,
+        "Ddn": 20.0,
+        "Dup": 0.0,
+        "femax": 1.0,
+        "femin": -1.0,
+        "Kpg": 10.0,
+        "Kig": 10.0,
+        "Pmax": 2.0,
+        "Pmin": 0.0,
+        "Tlag": 3.0
       }
     },
     {
       "class": "Genrou",
+      "id": "34_1_genrou",
       "ports": {
         "bus": 34,
-        "speed": 25
+        "pmech": 80,
+        "efd": 81,
+        "speed": 82
       },
-      "id": "34_1_genrou",
       "params": {
         "p0": 0.0722000002861023,
         "q0": -0.009824293665587902,
@@ -5134,19 +4849,60 @@
         "S10": 0.17000000178813934,
         "S12": 0.5799999833106995,
         "mva": 9.199999809265137
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "34_1_tgov1",
+      "ports": {
+        "speed": 82,
+        "pmech": 80
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 9.199999809265137,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9130434848804782,
+        "Pvmin": 0.2717391401177207,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "34_1_ieeet1",
+      "ports": {
+        "bus": 34,
+        "speed": 82,
+        "efd": 81
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Genrou",
-      "ports": {
-        "bus": 34,
-        "speed": 26
-      },
       "id": "34_2_genrou",
+      "ports": {
+        "bus": 34,
+        "pmech": 83,
+        "efd": 84,
+        "speed": 85
+      },
       "params": {
         "p0": 0.06040000170469284,
         "q0": -0.009824293665587902,
@@ -5167,19 +4923,60 @@
         "S10": 0.17000000178813934,
         "S12": 0.5799999833106995,
         "mva": 9.199999809265137
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "34_2_tgov1",
+      "ports": {
+        "speed": 85,
+        "pmech": 83
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 9.199999809265137,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9130434848804782,
+        "Pvmin": 0.2717391401177207,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "34_2_ieeet1",
+      "ports": {
+        "bus": 34,
+        "speed": 85,
+        "efd": 84
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Genrou",
-      "ports": {
-        "bus": 34,
-        "speed": 27
-      },
       "id": "34_3_genrou",
+      "ports": {
+        "bus": 34,
+        "pmech": 86,
+        "efd": 87,
+        "speed": 88
+      },
       "params": {
         "p0": 0.06040000170469284,
         "q0": -0.009824293665587902,
@@ -5200,19 +4997,60 @@
         "S10": 0.17000000178813934,
         "S12": 0.5799999833106995,
         "mva": 9.199999809265137
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "34_3_tgov1",
+      "ports": {
+        "speed": 88,
+        "pmech": 86
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 9.199999809265137,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9130434848804782,
+        "Pvmin": 0.2717391401177207,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "34_3_ieeet1",
+      "ports": {
+        "bus": 34,
+        "speed": 88,
+        "efd": 87
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Genrou",
-      "ports": {
-        "bus": 34,
-        "speed": 28
-      },
       "id": "34_4_genrou",
+      "ports": {
+        "bus": 34,
+        "pmech": 89,
+        "efd": 90,
+        "speed": 91
+      },
       "params": {
         "p0": 0.06040000170469284,
         "q0": -0.009824293665587902,
@@ -5233,19 +5071,60 @@
         "S10": 0.17000000178813934,
         "S12": 0.5799999833106995,
         "mva": 9.199999809265137
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "34_4_tgov1",
+      "ports": {
+        "speed": 91,
+        "pmech": 89
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 9.199999809265137,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9130434848804782,
+        "Pvmin": 0.2717391401177207,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "34_4_ieeet1",
+      "ports": {
+        "bus": 34,
+        "speed": 91,
+        "efd": 90
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Genrou",
+      "id": "34_5_genrou",
       "ports": {
         "bus": 34,
-        "speed": 29
+        "pmech": 92,
+        "efd": 93,
+        "speed": 94
       },
-      "id": "34_5_genrou",
       "params": {
         "p0": 0.06009000167250633,
         "q0": -0.009824293665587902,
@@ -5266,19 +5145,60 @@
         "S10": 0.17000000178813934,
         "S12": 0.5799999833106995,
         "mva": 9.199999809265137
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "34_5_tgov1",
+      "ports": {
+        "speed": 94,
+        "pmech": 92
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 9.199999809265137,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9130434848804782,
+        "Pvmin": 0.2717391401177207,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "34_5_ieeet1",
+      "ports": {
+        "bus": 34,
+        "speed": 94,
+        "efd": 93
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Genrou",
+      "id": "34_6_genrou",
       "ports": {
         "bus": 34,
-        "speed": 30
+        "pmech": 95,
+        "efd": 96,
+        "speed": 97
       },
-      "id": "34_6_genrou",
       "params": {
         "p0": 0.0722000002861023,
         "q0": -0.009824293665587902,
@@ -5299,19 +5219,60 @@
         "S10": 0.17000000178813934,
         "S12": 0.5799999833106995,
         "mva": 9.199999809265137
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "34_6_tgov1",
+      "ports": {
+        "speed": 97,
+        "pmech": 95
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 9.199999809265137,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9130434848804782,
+        "Pvmin": 0.2717391401177207,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "34_6_ieeet1",
+      "ports": {
+        "bus": 34,
+        "speed": 97,
+        "efd": 96
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Genrou",
+      "id": "35_1_genrou",
       "ports": {
         "bus": 35,
-        "speed": 31
+        "pmech": 98,
+        "efd": 99,
+        "speed": 100
       },
-      "id": "35_1_genrou",
       "params": {
         "p0": 0.5799999833106995,
         "q0": 0.0005298791220411658,
@@ -5332,19 +5293,59 @@
         "S10": 0.15000000596046448,
         "S12": 0.5299999713897705,
         "mva": 63.79999923706055
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "35_1_tgov1",
+      "ports": {
+        "speed": 100,
+        "pmech": 98
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 63.79999923706055,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9090908938033112,
+        "Pvmin": 0.07836990806108622,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "35_1_ieeet1",
+      "ports": {
+        "bus": 35,
+        "speed": 100,
+        "vs": 101,
+        "efd": 99
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 31,
-        "output": 32
-      },
       "id": "35_1_ieeest",
+      "ports": {
+        "input": 100,
+        "output": 101
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -5368,11 +5369,13 @@
     },
     {
       "class": "Genrou",
+      "id": "35_2_genrou",
       "ports": {
         "bus": 35,
-        "speed": 33
+        "pmech": 102,
+        "efd": 103,
+        "speed": 104
       },
-      "id": "35_2_genrou",
       "params": {
         "p0": 0.2800000011920929,
         "q0": 0.0005298791220411658,
@@ -5393,19 +5396,59 @@
         "S10": 0.15000000596046448,
         "S12": 0.5299999713897705,
         "mva": 30.799999237060547
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "35_2_tgov1",
+      "ports": {
+        "speed": 104,
+        "pmech": 102
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 30.799999237060547,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9090909354802152,
+        "Pvmin": 0.16233766877790967,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "35_2_ieeet1",
+      "ports": {
+        "bus": 35,
+        "speed": 104,
+        "vs": 105,
+        "efd": 103
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 33,
-        "output": 34
-      },
       "id": "35_2_ieeest",
+      "ports": {
+        "input": 104,
+        "output": 105
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -5429,11 +5472,13 @@
     },
     {
       "class": "Genrou",
+      "id": "35_4_genrou",
       "ports": {
         "bus": 35,
-        "speed": 37
+        "pmech": 106,
+        "efd": 107,
+        "speed": 108
       },
-      "id": "35_4_genrou",
       "params": {
         "p0": 0.20000000298023224,
         "q0": 0.0005298791220411658,
@@ -5454,19 +5499,59 @@
         "S10": 0.15000000596046448,
         "S12": 0.5299999713897705,
         "mva": 22.0
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "35_4_tgov1",
+      "ports": {
+        "speed": 108,
+        "pmech": 106
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 22.0,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9090909226374193,
+        "Pvmin": 0.22727273065935483,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "35_4_ieeet1",
+      "ports": {
+        "bus": 35,
+        "speed": 108,
+        "vs": 109,
+        "efd": 107
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 37,
-        "output": 38
-      },
       "id": "35_4_ieeest",
+      "ports": {
+        "input": 108,
+        "output": 109
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -5490,11 +5575,13 @@
     },
     {
       "class": "Genrou",
+      "id": "35_5_genrou",
       "ports": {
         "bus": 35,
-        "speed": 39
+        "pmech": 110,
+        "efd": 111,
+        "speed": 112
       },
-      "id": "35_5_genrou",
       "params": {
         "p0": 0.6700000166893005,
         "q0": 0.0005298791220411658,
@@ -5515,19 +5602,59 @@
         "S10": 0.15000000596046448,
         "S12": 0.5299999713897705,
         "mva": 93.5
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "35_5_tgov1",
+      "ports": {
+        "speed": 112,
+        "pmech": 110
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 93.5,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9090909345902224,
+        "Pvmin": 0.42780749300584436,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "35_5_ieeet1",
+      "ports": {
+        "bus": 35,
+        "speed": 112,
+        "vs": 113,
+        "efd": 111
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 39,
-        "output": 40
-      },
       "id": "35_5_ieeest",
+      "ports": {
+        "input": 112,
+        "output": 113
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -5551,11 +5678,13 @@
     },
     {
       "class": "Genrou",
+      "id": "35_7_genrou",
       "ports": {
         "bus": 35,
-        "speed": 43
+        "pmech": 114,
+        "efd": 115,
+        "speed": 116
       },
-      "id": "35_7_genrou",
       "params": {
         "p0": 0.5,
         "q0": 0.0005298791220411658,
@@ -5576,19 +5705,59 @@
         "S10": 0.15000000596046448,
         "S12": 0.5299999713897705,
         "mva": 55.0
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "35_7_tgov1",
+      "ports": {
+        "speed": 116,
+        "pmech": 114
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 55.0,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9090909090909091,
+        "Pvmin": 0.18181818452748386,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "35_7_ieeet1",
+      "ports": {
+        "bus": 35,
+        "speed": 116,
+        "vs": 117,
+        "efd": 115
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 43,
-        "output": 44
-      },
       "id": "35_7_ieeest",
+      "ports": {
+        "input": 116,
+        "output": 117
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -5612,11 +5781,13 @@
     },
     {
       "class": "Genrou",
+      "id": "35_8_genrou",
       "ports": {
         "bus": 35,
-        "speed": 45
+        "pmech": 118,
+        "efd": 119,
+        "speed": 120
       },
-      "id": "35_8_genrou",
       "params": {
         "p0": 0.5619999766349792,
         "q0": 0.0005298791220411658,
@@ -5637,19 +5808,59 @@
         "S10": 0.15000000596046448,
         "S12": 0.5299999713897705,
         "mva": 124.30000305175781
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "35_8_tgov1",
+      "ports": {
+        "speed": 120,
+        "pmech": 118
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 124.30000305175781,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9090908829351378,
+        "Pvmin": 0.3378921774540042,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "35_8_ieeet1",
+      "ports": {
+        "bus": 35,
+        "speed": 120,
+        "vs": 121,
+        "efd": 119
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Ieeest",
-      "ports": {
-        "input": 45,
-        "output": 46
-      },
       "id": "35_8_ieeest",
+      "ports": {
+        "input": 120,
+        "output": 121
+      },
       "params": {
         "A1": 0.0,
         "A2": 0.0,
@@ -5673,12 +5884,13 @@
     },
     {
       "class": "Genrou",
+      "id": "36_1_genrou",
       "ports": {
         "bus": 36,
-        "speed": 47,
-        "efd": 48
+        "pmech": 122,
+        "efd": 123,
+        "speed": 124
       },
-      "id": "36_1_genrou",
       "params": {
         "p0": 0.019999999552965164,
         "q0": 0.009999999776482582,
@@ -5699,20 +5911,34 @@
         "S10": 0.05999999865889549,
         "S12": 0.36000001430511475,
         "mva": 3.5
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "36_1_tgov1",
+      "ports": {
+        "speed": 124,
+        "pmech": 122
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 3.5,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9142857577119555,
+        "Pvmin": 0.5714285586561475,
+        "Dt": 0.0
+      }
     },
     {
       "class": "Ieeet1",
+      "id": "36_1_ieeet1",
       "ports": {
         "bus": 36,
-        "speed": 47,
-        "efd": 48
+        "speed": 124,
+        "efd": 123
       },
-      "id": "36_1_ieeet1",
       "params": {
         "Tr": 0.0,
         "Ka": 29.030000686645508,
@@ -5732,12 +5958,13 @@
     },
     {
       "class": "Genrou",
+      "id": "36_2_genrou",
       "ports": {
         "bus": 36,
-        "speed": 49,
-        "efd": 50
+        "pmech": 125,
+        "efd": 126,
+        "speed": 127
       },
-      "id": "36_2_genrou",
       "params": {
         "p0": 0.02101000025868416,
         "q0": 0.009999999776482582,
@@ -5758,20 +5985,34 @@
         "S10": 0.05999999865889549,
         "S12": 0.36000001430511475,
         "mva": 3.5
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "36_2_tgov1",
+      "ports": {
+        "speed": 127,
+        "pmech": 125
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 3.5,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9142857577119555,
+        "Pvmin": 0.5714285586561475,
+        "Dt": 0.0
+      }
     },
     {
       "class": "Ieeet1",
+      "id": "36_2_ieeet1",
       "ports": {
         "bus": 36,
-        "speed": 49,
-        "efd": 50
+        "speed": 127,
+        "efd": 126
       },
-      "id": "36_2_ieeet1",
       "params": {
         "Tr": 0.0,
         "Ka": 29.030000686645508,
@@ -5791,12 +6032,13 @@
     },
     {
       "class": "Genrou",
+      "id": "36_3_genrou",
       "ports": {
         "bus": 36,
-        "speed": 51,
-        "efd": 52
+        "pmech": 128,
+        "efd": 129,
+        "speed": 130
       },
-      "id": "36_3_genrou",
       "params": {
         "p0": 0.019999999552965164,
         "q0": 0.009999999776482582,
@@ -5817,20 +6059,34 @@
         "S10": 0.05999999865889549,
         "S12": 0.36000001430511475,
         "mva": 3.5
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "36_3_tgov1",
+      "ports": {
+        "speed": 130,
+        "pmech": 128
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 3.5,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9142857577119555,
+        "Pvmin": 0.5714285586561475,
+        "Dt": 0.0
+      }
     },
     {
       "class": "Ieeet1",
+      "id": "36_3_ieeet1",
       "ports": {
         "bus": 36,
-        "speed": 51,
-        "efd": 52
+        "speed": 130,
+        "efd": 129
       },
-      "id": "36_3_ieeet1",
       "params": {
         "Tr": 0.0,
         "Ka": 29.030000686645508,
@@ -5850,12 +6106,13 @@
     },
     {
       "class": "Genrou",
+      "id": "36_4_genrou",
       "ports": {
         "bus": 36,
-        "speed": 53,
-        "efd": 54
+        "pmech": 131,
+        "efd": 132,
+        "speed": 133
       },
-      "id": "36_4_genrou",
       "params": {
         "p0": 0.024800000712275505,
         "q0": 0.009999999776482582,
@@ -5876,20 +6133,34 @@
         "S10": 0.05999999865889549,
         "S12": 0.36000001430511475,
         "mva": 3.5
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "36_4_tgov1",
+      "ports": {
+        "speed": 133,
+        "pmech": 131
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 3.5,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9142857577119555,
+        "Pvmin": 0.5714285586561475,
+        "Dt": 0.0
+      }
     },
     {
       "class": "Ieeet1",
+      "id": "36_4_ieeet1",
       "ports": {
         "bus": 36,
-        "speed": 53,
-        "efd": 54
+        "speed": 133,
+        "efd": 132
       },
-      "id": "36_4_ieeet1",
       "params": {
         "Tr": 0.0,
         "Ka": 29.030000686645508,
@@ -5909,11 +6180,13 @@
     },
     {
       "class": "Genrou",
+      "id": "37_3_genrou",
       "ports": {
         "bus": 37,
-        "speed": 57
+        "pmech": 134,
+        "efd": 135,
+        "speed": 136
       },
-      "id": "37_3_genrou",
       "params": {
         "p0": 0.5832421183586121,
         "q0": 0.056257691234350204,
@@ -5934,19 +6207,60 @@
         "S10": 0.12999999523162842,
         "S12": 0.5099999904632568,
         "mva": 95.9000015258789
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "37_3_tgov1",
+      "ports": {
+        "speed": 136,
+        "pmech": 134
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 95.9000015258789,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9092804641758564,
+        "Pvmin": 0.20855057330344426,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "37_3_ieeet1",
+      "ports": {
+        "bus": 37,
+        "speed": 136,
+        "efd": 135
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     },
     {
       "class": "Genrou",
+      "id": "37_5_genrou",
       "ports": {
         "bus": 37,
-        "speed": 59
+        "pmech": 137,
+        "efd": 138,
+        "speed": 139
       },
-      "id": "37_5_genrou",
       "params": {
         "p0": 0.6848000288009644,
         "q0": 0.056257691234350204,
@@ -5967,11 +6281,50 @@
         "S10": 0.12999999523162842,
         "S12": 0.5099999904632568,
         "mva": 85.9000015258789
+      }
+    },
+    {
+      "class": "Tgov1",
+      "id": "37_5_tgov1",
+      "ports": {
+        "speed": 139,
+        "pmech": 137
       },
-      "mon": [
-        "delta",
-        "omega"
-      ]
+      "params": {
+        "Trate": 85.9000015258789,
+        "R": 0.05,
+        "T1": 0.5,
+        "T2": 2.5,
+        "T3": 7.5,
+        "Pvmax": 0.9091966759510209,
+        "Pvmin": 0.34924331384388696,
+        "Dt": 0.0
+      }
+    },
+    {
+      "class": "Ieeet1",
+      "id": "37_5_ieeet1",
+      "ports": {
+        "bus": 37,
+        "speed": 139,
+        "efd": 138
+      },
+      "params": {
+        "Tr": 0.0,
+        "Ka": 50.0,
+        "Ta": 0.04,
+        "Ke": -0.06,
+        "Te": 0.6,
+        "Kf": 0.09,
+        "Tf": 1.46,
+        "Vrmin": -1.0,
+        "Vrmax": 1.0,
+        "E1": 2.8,
+        "E2": 3.73,
+        "Se1": 0.04,
+        "Se2": 0.33,
+        "Ispdlim": 0.0
+      }
     }
   ]
 }
