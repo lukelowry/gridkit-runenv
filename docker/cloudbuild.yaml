@@ -6,16 +6,16 @@ steps:
     args:
       - build
       - --file=docker/Dockerfile
-      - --build-arg=GRIDKIT_REF=develop
+      - --build-arg=GRIDKIT_REF=${_GRIDKIT_REF}
       - --build-arg=SOURCE_REVISION=${_SOURCE_REVISION}
       - --build-arg=UPSTREAM_CACHE_BUST=${BUILD_ID}
-      - --tag=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:latest
+      - --tag=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:${_IMAGE_TAG}
       - --cache-from=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:latest
       - .
     env: [DOCKER_BUILDKIT=1]
 
 images:
-  - ${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:latest
+  - ${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:${_IMAGE_TAG}
 
 options:
   machineType: E2_HIGHCPU_32
@@ -27,4 +27,6 @@ timeout: 3600s
 substitutions:
   _AR_HOST: us-central1-docker.pkg.dev
   _AR_REPO: lattice
+  _GRIDKIT_REF: develop
+  _IMAGE_TAG: latest
   _SOURCE_REVISION: manual
