@@ -19,6 +19,8 @@ COPY --from=gridkit /opt/suitesparse/ /opt/suitesparse/
 COPY --from=gridkit /opt/sundials/ /opt/sundials/
 COPY --from=gridkit /opt/gridkit/ /opt/gridkit/
 
+ENV PATH=/opt/gridkit/bin:$PATH
+
 RUN <<'EOF'
 set -eu
 

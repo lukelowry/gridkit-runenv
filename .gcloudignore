@@ -1,5 +1,7 @@
-# The GridKit artifact build uses only `docker/`. Keep large cases and
+# The GridKit image build uses only `docker/`. Keep large cases and
 # the checked-in VSIX out of the source archive uploaded by gcloud.
+# The smoke fixture under docker/smoke/ is re-included below because the
+# Cloud Build smoke-test step runs it from /workspace.
 .git/
 .devcontainer/
 .github/
@@ -9,6 +11,8 @@ cases/
 wecc.example/
 *.case.json
 *.solver.json
+!docker/smoke/TwoArea.case.json
+!docker/smoke/smoke.solver.json
 *.vsix
 .dockerignore
 .gitattributes

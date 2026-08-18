@@ -1,0 +1,9 @@
+{
+  "system_model_file": "TwoArea.case.json",
+  "tmax": 0.5,
+  "dt_monitor": 0,
+  "events": [
+    { "time": 0.1, "type": "fault_on", "element_id": 0 },
+    { "time": 0.15, "type": "fault_off", "element_id": 0 }
+  ]
+}

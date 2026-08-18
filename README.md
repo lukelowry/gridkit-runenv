@@ -1,65 +1,78 @@
-# GridKit Studio run environment
+# GridKit run environment
 
-This repository provides a development environment for exercising GridKit cases.
-GridKit and its native dependencies come from the latest install-artifact image;
-nothing is loaded from the host machine.
+Runnable GridKit container image, the dev container used by GridKit Studio,
+and the Cloud Build definition that publishes both. GridKit is never
+installed on the host — every simulation runs in a container.
 
-## Open the environment
+## Setup (once)
 
-Requirements:
+- Docker Desktop or another engine with AMD64 support (ARM hosts emulate).
+- Registry auth: `gcloud auth configure-docker us-central1-docker.pkg.dev`
+- Dev container only: VS Code with the **Dev Containers** extension.
 
-- Docker Desktop or another Docker engine with AMD64 container support
-- VS Code with the **Dev Containers** extension
+## Run a simulation
 
-Clone the repository, open its folder in VS Code, and run **Dev Containers: Reopen
-in Container**. The dev container copies the GridKit installation from the image's
-`latest` tag.
+From a host terminal at the repo root:
 
-The GridKit artifact is currently AMD64-only. Apple Silicon and other ARM hosts run
-the container through Docker's AMD64 emulation.
-
-## Verify the environment
-
-From the container terminal:
-
-```sh
-test -x /opt/gridkit/bin/DynamicSimulation
+```powershell
+docker run --rm --init -v "${PWD}:/work" `
+  us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit:latest my.solver.json
 ```
 
-Generated `*.run/` directories are local test output and are ignored by Git.
+The checkout is mounted at `/work`; results are written back into it
+(`*.run/` output is git-ignored). For contingency analysis add
+`--entrypoint ContingencyAnalysis`.
 
-## GridKit install image
+`latest` tracks GridKit `develop` — refresh with `docker pull`. For a
+reproducible study, replace `latest` with a CI-published date tag
+(`gridkit:YYYYMMDD-HHMMSS`).
 
-This repository owns the build definition for the install-artifact image consumed by
-the dev container:
+## Study files
 
-```text
-us-central1-docker.pkg.dev/gridkitvm/lattice/gridkit-install
+Minimal `my.solver.json`, kept at the repo root so its case path resolves
+under `/work`:
+
+```json
+{
+  "system_model_file": "cases/TwoArea.case.json",
+  "tmax": 4,
+  "dt_monitor": 0.004,
+  "events": [
+    { "time": 1, "type": "fault_on", "element_id": 0 },
+    { "time": 1.05, "type": "fault_off", "element_id": 0 }
+  ]
+}
 ```
 
-The final image is based on `scratch` and is not a runnable container. It contains
-the installed GridKit prefix and native libraries for use with Docker
-`COPY --from`.
+`tmax`, `system_model_file`, and `events` (may be empty) are required.
+`dt_monitor` is the output sampling interval; `0` records only each
+segment's final value.
 
-The image build tracks GridKit's `develop` branch. Relevant changes on `main` trigger
-`.github/workflows/build.yml`, which authenticates to Google Cloud through Workload
-Identity Federation and submits `docker/cloudbuild.yaml`. Successful builds publish
-the `latest` image tag.
+## Dev container
 
-The destination GitHub repository must define these Actions variables:
-
-- `GCP_WIF_PROVIDER`
-- `GCP_DEPLOYER_SA`
-
-The corresponding Google Cloud identity binding must authorize
-`lukelowry/gridkit-runenv` to submit builds. The Cloud Build service account must be
-able to publish to the `gridkitvm/lattice` Artifact Registry repository.
-
-To submit the same build manually:
+VS Code → **Dev Containers: Reopen in Container**. Inside the container
+terminal the binaries are on `PATH`:
 
 ```sh
-gcloud builds submit \
-  --project=gridkitvm \
-  --config=docker/cloudbuild.yaml \
-  .
+DynamicSimulation my.solver.json
+```
+
+GridKit Studio uses the same `/opt/gridkit` installation.
+
+## Images and CI
+
+| Image | Role |
+| --- | --- |
+| `…/lattice/gridkit` | Runnable. Entrypoint `DynamicSimulation`, `WORKDIR /work`. |
+| `…/lattice/gridkit-install` | Internal `scratch` artifact the dev container copies from. Not runnable. |
+
+Both build from [docker/Dockerfile](docker/Dockerfile) via
+[docker/cloudbuild.yaml](docker/cloudbuild.yaml); a smoke simulation against
+[docker/smoke/](docker/smoke/) gates every push. Pushes to `main` touching
+`docker/**` trigger [.github/workflows/build.yml](.github/workflows/build.yml)
+(requires Actions variables `GCP_WIF_PROVIDER` and `GCP_DEPLOYER_SA`).
+Manual build:
+
+```sh
+gcloud builds submit --project=gridkitvm --config=docker/cloudbuild.yaml .
 ```

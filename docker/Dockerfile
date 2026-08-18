@@ -1,10 +1,15 @@
 # syntax=docker/dockerfile:1
 #
-# GridKit install artifact built by Cloud Build and consumed with COPY --from.
-# The final scratch image contains:
-#   /opt/suitesparse/lib/    libklu.so*, libsuitesparseconfig.so*, libamd/colamd/btf.so*
-#   /opt/sundials/lib/       libsundials_*.so*
-#   /opt/gridkit/            installed GridKit prefix with application binaries
+# GridKit images built by Cloud Build. Two publishable targets:
+#
+#   install  (scratch)  install artifact consumed with COPY --from:
+#     /opt/suitesparse/lib/    libklu.so*, libsuitesparseconfig.so*, libamd/colamd/btf.so*
+#     /opt/sundials/lib/       libsundials_*.so*
+#     /opt/gridkit/            installed GridKit prefix with application binaries
+#
+#   runtime  (ubuntu)   runnable image: DynamicSimulation/ContingencyAnalysis on
+#     PATH, WORKDIR /work, ENTRYPOINT DynamicSimulation. Mount a directory with a
+#     study file at /work and pass the study filename as the argument.
 
 ARG UBUNTU_TAG=24.04
 ARG LLVM_VERSION=16
@@ -154,8 +159,8 @@ cat > ${GRIDKIT_PREFIX}/share/gridkit/toolchain.json <<JSON
 JSON
 EOF
 
-# -- Final: scratch image with runtime artifacts only --
-FROM scratch
+# -- Install artifact: scratch image for COPY --from consumption --
+FROM scratch AS install
 ARG SUITESPARSE_PREFIX
 ARG SUNDIALS_PREFIX
 ARG GRIDKIT_PREFIX
@@ -165,5 +170,33 @@ COPY --from=sundials    ${SUNDIALS_PREFIX}/lib/                      ${SUNDIALS_
 COPY --from=gridkit     ${GRIDKIT_PREFIX}/                           ${GRIDKIT_PREFIX}/
 LABEL org.opencontainers.image.title="gridkit-runenv/gridkit-install"
 LABEL org.opencontainers.image.description="GridKit applications and native runtime dependencies for COPY --from consumption."
+LABEL org.opencontainers.image.source="https://github.com/lukelowry/gridkit-runenv"
+LABEL org.opencontainers.image.revision="${SOURCE_REVISION}"
+
+# -- Runtime: runnable image for CLI and orchestrated simulations --
+FROM ubuntu:${UBUNTU_TAG} AS runtime
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        libgomp1 libopenblas0 libstdc++6 \
+    && rm -rf /var/lib/apt/lists/*
+ARG SUITESPARSE_PREFIX
+ARG SUNDIALS_PREFIX
+ARG GRIDKIT_PREFIX
+ARG SOURCE_REVISION=unknown
+COPY --from=suitesparse ${SUITESPARSE_PREFIX}/lib/ ${SUITESPARSE_PREFIX}/lib/
+COPY --from=sundials    ${SUNDIALS_PREFIX}/lib/    ${SUNDIALS_PREFIX}/lib/
+COPY --from=gridkit     ${GRIDKIT_PREFIX}/         ${GRIDKIT_PREFIX}/
+RUN printf '%s\n' ${SUITESPARSE_PREFIX}/lib ${SUNDIALS_PREFIX}/lib ${GRIDKIT_PREFIX}/lib \
+        > /etc/ld.so.conf.d/gridkit.conf \
+    && ldconfig \
+    && for app in DynamicSimulation ContingencyAnalysis; do \
+        if ldd ${GRIDKIT_PREFIX}/bin/${app} | grep -q 'not found'; then \
+          echo "unresolved runtime deps for ${app}" && exit 1; \
+        fi; \
+      done
+ENV PATH=${GRIDKIT_PREFIX}/bin:${PATH}
+WORKDIR /work
+ENTRYPOINT ["DynamicSimulation"]
+LABEL org.opencontainers.image.title="gridkit-runenv/gridkit"
+LABEL org.opencontainers.image.description="Runnable GridKit image. Mount a study directory at /work and pass the study filename."
 LABEL org.opencontainers.image.source="https://github.com/lukelowry/gridkit-runenv"
 LABEL org.opencontainers.image.revision="${SOURCE_REVISION}"

@@ -1,32 +1,66 @@
-# Manual invocation:
-# gcloud builds submit --project=gridkitvm --config=docker/cloudbuild.yaml .
+# Builds and publishes both GridKit images. Runs automatically on pushes to
+# main (.github/workflows/build.yml), or manually from the repo root:
+#
+#   gcloud builds submit --project=gridkitvm --config=docker/cloudbuild.yaml .
+
+substitutions:
+  _IMAGE_REPO: us-central1-docker.pkg.dev/gridkitvm/lattice
+  _GRIDKIT_REF: develop
+  _SOURCE_REVISION: manual
 
 steps:
+  # gridkit-install: scratch artifact the dev container copies from.
   - name: gcr.io/cloud-builders/docker
     args:
       - build
       - --file=docker/Dockerfile
+      - --target=install
+      - --tag=${_IMAGE_REPO}/gridkit-install:latest
       - --build-arg=GRIDKIT_REF=${_GRIDKIT_REF}
       - --build-arg=SOURCE_REVISION=${_SOURCE_REVISION}
       - --build-arg=UPSTREAM_CACHE_BUST=${BUILD_ID}
-      - --tag=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:${_IMAGE_TAG}
-      - --cache-from=${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:latest
       - .
-    env: [DOCKER_BUILDKIT=1]
+
+  # gridkit: the runnable image. Reuses every stage built above, so this
+  # step only adds the final Ubuntu layer.
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --file=docker/Dockerfile
+      - --target=runtime
+      - --tag=${_IMAGE_REPO}/gridkit:latest
+      - --build-arg=GRIDKIT_REF=${_GRIDKIT_REF}
+      - --build-arg=SOURCE_REVISION=${_SOURCE_REVISION}
+      - --build-arg=UPSTREAM_CACHE_BUST=${BUILD_ID}
+      - .
+
+  # Smoke test: a short simulation must succeed, or nothing is pushed.
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - run
+      - --rm
+      - --volume=/workspace/docker/smoke:/work
+      - ${_IMAGE_REPO}/gridkit:latest
+      - smoke.solver.json
+
+  # Also push an immutable date tag, so studies can pin an exact build.
+  - name: gcr.io/cloud-builders/docker
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        tag=${_IMAGE_REPO}/gridkit:$$(date -u +%Y%m%d-%H%M%S)
+        docker tag ${_IMAGE_REPO}/gridkit:latest "$$tag"
+        docker push "$$tag"
 
 images:
-  - ${_AR_HOST}/${PROJECT_ID}/${_AR_REPO}/gridkit-install:${_IMAGE_TAG}
+  - ${_IMAGE_REPO}/gridkit-install:latest
+  - ${_IMAGE_REPO}/gridkit:latest
 
 options:
   machineType: E2_HIGHCPU_32
-  diskSizeGb: 100
+  diskSizeGb: "100"
   logging: CLOUD_LOGGING_ONLY
+  env: [DOCKER_BUILDKIT=1]
 
 timeout: 3600s
-
-substitutions:
-  _AR_HOST: us-central1-docker.pkg.dev
-  _AR_REPO: lattice
-  _GRIDKIT_REF: develop
-  _IMAGE_TAG: latest
-  _SOURCE_REVISION: manual
