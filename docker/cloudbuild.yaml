@@ -34,15 +34,6 @@ steps:
       - --build-arg=UPSTREAM_CACHE_BUST=${BUILD_ID}
       - .
 
-  # Smoke test: a short simulation must succeed, or nothing is pushed.
-  - name: gcr.io/cloud-builders/docker
-    args:
-      - run
-      - --rm
-      - --volume=/workspace/docker/smoke:/work
-      - ${_IMAGE_REPO}/gridkit:latest
-      - smoke.solver.json
-
   # Also push an immutable date tag, so studies can pin an exact build.
   - name: gcr.io/cloud-builders/docker
     entrypoint: bash

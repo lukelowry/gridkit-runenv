@@ -8,8 +8,6 @@ through `cloudbuild.yaml`:
 - `runtime` — runnable image (`gridkit`) with the applications on `PATH`,
   `WORKDIR /work`, and entrypoint `DynamicSimulation`.
 
-The build smoke-tests the runtime image against the fixture in `smoke/`
-(a frozen copy of the TwoArea case plus a short study) before any push.
 Every build publishes the moving `latest` tags and an immutable
 `gridkit:YYYYMMDD-HHMMSS` tag.
 

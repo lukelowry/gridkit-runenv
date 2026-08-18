@@ -37,16 +37,17 @@ under `/work`:
   "system_model_file": "cases/TwoArea.case.json",
   "tmax": 4,
   "dt_monitor": 0.004,
-  "events": [
-    { "time": 1, "type": "fault_on", "element_id": 0 },
-    { "time": 1.05, "type": "fault_off", "element_id": 0 }
-  ]
+  "events": []
 }
 ```
 
-`tmax`, `system_model_file`, and `events` (may be empty) are required.
-`dt_monitor` is the output sampling interval; `0` records only each
-segment's final value.
+`tmax`, `system_model_file`, and `events` are required. `dt_monitor` is the
+output sampling interval; `0` records only each segment's final value.
+Fault events (`{ "time": 1, "type": "fault_on", "element_id": 0 }` plus a
+matching `fault_off`) require a `BusFault` element in the case;
+`element_id` indexes those elements 0-based in order of appearance. A case
+without one only accepts `"events": []` — event ids that match nothing
+crash the solver.
 
 ## Dev container
 
@@ -67,8 +68,8 @@ GridKit Studio uses the same `/opt/gridkit` installation.
 | `…/lattice/gridkit-install` | Internal `scratch` artifact the dev container copies from. Not runnable. |
 
 Both build from [docker/Dockerfile](docker/Dockerfile) via
-[docker/cloudbuild.yaml](docker/cloudbuild.yaml); a smoke simulation against
-[docker/smoke/](docker/smoke/) gates every push. Pushes to `main` touching
+[docker/cloudbuild.yaml](docker/cloudbuild.yaml); GridKit's test suite and a
+shared-library check run inside the build. Pushes to `main` touching
 `docker/**` trigger [.github/workflows/build.yml](.github/workflows/build.yml)
 (requires Actions variables `GCP_WIF_PROVIDER` and `GCP_DEPLOYER_SA`).
 Manual build:
